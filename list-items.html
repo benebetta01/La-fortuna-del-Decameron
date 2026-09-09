@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <title>Catalogo | La fortuna delle novelle di Boccaccio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- css -->
+  <!-- 1. Stili generali di tutto il sito -->
+  <link rel="stylesheet" href="style/style.css">
+  <!-- 2. Stili specifici della lista (sovrascrive solo ciò che serve) -->
+  <link rel="stylesheet" href="style/style-list-items.css">
+  <!-- icons -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+</head>
+<body class="page-list-items">
+  <!-- header -->
+  <header>
+    <div class="header">
+     <img src="img/layout/Decamerone.jpg" class="center" alt="Decamerone"/>
+   </div>
+ </header>
+ <!-- navigation bar -->
+ <nav>
+  <div class="topnav">
+    <a class="navbar-brand" href="#">La fortuna delle novelle di Boccaccio</a>
+    <a href="index.html" title="Link alla home">&#9812;Homepage</a>
+    <a href="index.html#scopri-di-piu" title="Link al progetto">&#9813;Progetto</a>
+    <!--dropdown (tendina) in topnav-->
+    <div class="dropdown">
+      <button class="dropbtn active">&#9815;Catalogo <i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="list-items.html">Lista</a>
+        <a href="#">Le novelle</a>
+        <a href="#">Le parole chiave</a>
+        <a href="#">Le tipologie</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">&#9814;Percorsi interattivi <i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="map.html" title="Link alla mappa su Leaflet">La mappa dei luoghi</a>
+        <a href="#" title="Link alla linea del tempo">La linea del tempo</a>
+      </div>
+    </div>
+    <a href="data.html" title="Vai alla pagina dei Dati e Riconciliazione">&#9816;Dati</a>
+    <!--barra di search in alto a destra-->
+    <form class="search-form">
+        <input type="text" placeholder="Search..">
+        <button class="search-button" type="submit">Cerca</button>
+    </form>
+  </div>
+</nav>
+<!-- two columns grid -->
+<div class="row">
+  <!-- left column -->
+  <div class="leftcolumn">
+    <!-- breadcrumbs -->
+    <div>
+      <ul class="breadcrumb" id="breadcrumb-list">
+        <!-- Generato automaticamente da main.js -->
+      </ul>
+    </div>
+    <!--riordina la lista-->
+    <div>
+      <p class="bold">Riordina la lista:</p>
+      <a href="javascript:void(0)" onclick="sortCards('asc')" class="btn default" title="In ordine alfabetico">In ordine alfabetico (A-Z)</a>
+      <a href="javascript:void(0)" onclick="sortCards('desc')" class="btn bg-black" title="In ordine alfabetico">In ordine alfabetico (Z-A)</a>
+      <a href="#" class="btn bg-pink" title="Per data di creazione">In ordine cronologico</a>
+    </div>
+    <!-- filters -->
+    <div>
+      <p class="bold">Filtra le opere:</p>
+      <a href="#" class="btn default active" title="Per novella">Per novella di riferimento</a>
+      <a href="#" class="btn bg-black" title="Per tema">Per parole chiave</a>
+      <a href="#" class="btn bg-pink" title="Per luogo">Per luogo di conservazione</a>
+      <a href="#" class="btn bg-blue" title="Per tipologia">Per tipologia</a>
+    </div>
+  </div>
+  <!-- right column -->
+  <div class="rightcolumn">
+    <h1>Catalogo | <i>Lista</i></h1> 
+    <h3>Per novella di riferimento</h3>
+    <!-- tabs -->
+    <!-- tab links -->
+    <div class="tab">
+      <div id="myBtnContainer"> <!--ho usato Filter DIV Elements dal w3schools e ci ho inserito dentro i dropdown per i filtri e poi le card-->
+        <div class="dropdown">
+          <button class="dropbtn active" onclick="filterSelection('all')"> Tutte le opere</button>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn giorno-btn"> Giornata I <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a onclick="filterSelection('I-1')">Novella 1</a>
+            <a onclick="filterSelection('I-2')">Novella 2</a>
+            <a onclick="filterSelection('I-3')">Novella 3</a>
+            <a onclick="filterSelection('I-4')">Novella 4</a>
+            <a onclick="filterSelection('I-5')">Novella 5</a>
+            <a onclick="filterSelection('I-6')">Novella 6</a>
+            <a onclick="filterSelection('I-7')">Novella 7</a>
+            <a onclick="filterSelection('I-8')">Novella 8</a>
+            <a onclick="filterSelection('I-9')">Novella 9</a>
+            <a onclick="filterSelection('I-10')">Novella 10</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn giorno-btn"> Giornata II <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a onclick="filterSelection('II-1')">Novella 1</a>
+            <a onclick="filterSelection('II-2')">Novella 2</a>
+            <a onclick="filterSelection('II-3')">Novella 3</a>
+            <a onclick="filterSelection('II-4')">Novella 4</a>
+            <a onclick="filterSelection('II-5')">Novella 5</a>
+            <a onclick="filterSelection('II-6')">Novella 6</a>
+            <a onclick="filterSelection('II-7')">Novella 7</a>
+            <a onclick="filterSelection('II-8')">Novella 8</a>
+            <a onclick="filterSelection('II-9')">Novella 9</a>
+            <a onclick="filterSelection('II-10')">Novella 10</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn giorno-btn"> Giornata III <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a onclick="filterSelection('III-1')">Novella 1</a>
+            <a onclick="filterSelection('III-2')">Novella 2</a>
+            <a onclick="filterSelection('III-3')">Novella 3</a>
+            <a onclick="filterSelection('III-4')">Novella 4</a>
+            <a onclick="filterSelection('III-5')">Novella 5</a>
+            <a onclick="filterSelection('III-6')">Novella 6</a>
+            <a onclick="filterSelection('III-7')">Novella 7</a>
+            <a onclick="filterSelection('III-8')">Novella 8</a>
+            <a onclick="filterSelection('III-9')">Novella 9</a>
+            <a onclick="filterSelection('III-10')">Novella 10</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn giorno-btn"> Giornata IV <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a onclick="filterSelection('IV-1')">Novella 1</a>
+            <a onclick="filterSelection('IV-2')">Novella 2</a>
+            <a onclick="filterSelection('IV-3')">Novella 3</a>
+            <a onclick="filterSelection('IV-4')">Novella 4</a>
+            <a onclick="filterSelection('IV-5')">Novella 5</a>
+            <a onclick="filterSelection('IV-6')">Novella 6</a>
+            <a onclick="filterSelection('IV-7')">Novella 7</a>
+            <a onclick="filterSelection('IV-8')">Novella 8</a>
+            <a onclick="filterSelection('IV-9')">Novella 9</a>
+            <a onclick="filterSelection('IV-10')">Novella 10</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn giorno-btn"> Giornata V <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a onclick="filterSelection('V-1')">Novella 1</a>
+            <a onclick="filterSelection('V-2')">Novella 2</a>
+            <a onclick="filterSelection('V-3')">Novella 3</a>
+            <a onclick="filterSelection('V-4')">Novella 4</a>
+            <a onclick="filterSelection('V-5')">Novella 5</a>
+            <a onclick="filterSelection('V-6')">Novella 6</a>
+            <a onclick="filterSelection('V-7')">Novella 7</a>
+            <a onclick="filterSelection('V-8')">Novella 8</a>
+            <a onclick="filterSelection('V-9')">Novella 9</a>
+            <a onclick="filterSelection('V-10')">Novella 10</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn giorno-btn"> Giornata VI <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a onclick="filterSelection('VI-1')">Novella 1</a>
+            <a onclick="filterSelection('VI-2')">Novella 2</a>
+            <a onclick="filterSelection('VI-3')">Novella 3</a>
+            <a onclick="filterSelection('VI-4')">Novella 4</a>
+            <a onclick="filterSelection('VI-5')">Novella 5</a>
+            <a onclick="filterSelection('VI-6')">Novella 6</a>
+            <a onclick="filterSelection('VI-7')">Novella 7</a>
+            <a onclick="filterSelection('VI-8')">Novella 8</a>
+            <a onclick="filterSelection('VI-9')">Novella 9</a>
+            <a onclick="filterSelection('VI-10')">Novella 10</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn giorno-btn"> Giornata VII <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a onclick="filterSelection('VII-1')">Novella 1</a>
+            <a onclick="filterSelection('VII-2')">Novella 2</a>
+            <a onclick="filterSelection('VII-3')">Novella 3</a>
+            <a onclick="filterSelection('VII-4')">Novella 4</a>
+            <a onclick="filterSelection('VII-5')">Novella 5</a>
+            <a onclick="filterSelection('VII-6')">Novella 6</a>
+            <a onclick="filterSelection('VII-7')">Novella 7</a>
+            <a onclick="filterSelection('VII-8')">Novella 8</a>
+            <a onclick="filterSelection('VII-9')">Novella 9</a>
+            <a onclick="filterSelection('VII-10')">Novella 10</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn giorno-btn"> Giornata VIII <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a onclick="filterSelection('VIII-1')">Novella 1</a>
+            <a onclick="filterSelection('VIII-2')">Novella 2</a>
+            <a onclick="filterSelection('VIII-3')">Novella 3</a>
+            <a onclick="filterSelection('VIII-4')">Novella 4</a>
+            <a onclick="filterSelection('VIII-5')">Novella 5</a>
+            <a onclick="filterSelection('VIII-6')">Novella 6</a>
+            <a onclick="filterSelection('VIII-7')">Novella 7</a>
+            <a onclick="filterSelection('VIII-8')">Novella 8</a>
+            <a onclick="filterSelection('VIII-9')">Novella 9</a>
+            <a onclick="filterSelection('VIII-10')">Novella 10</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn giorno-btn"> Giornata IX <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a onclick="filterSelection('IX-1')">Novella 1</a>
+            <a onclick="filterSelection('IX-2')">Novella 2</a>
+            <a onclick="filterSelection('IX-3')">Novella 3</a>
+            <a onclick="filterSelection('IX-4')">Novella 4</a>
+            <a onclick="filterSelection('IX-5')">Novella 5</a>
+            <a onclick="filterSelection('IX-6')">Novella 6</a>
+            <a onclick="filterSelection('IX-7')">Novella 7</a>
+            <a onclick="filterSelection('IX-8')">Novella 8</a>
+            <a onclick="filterSelection('IX-9')">Novella 9</a>
+            <a onclick="filterSelection('IX-10')">Novella 10</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn giorno-btn"> Giornata X <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a onclick="filterSelection('X-1')">Novella 1</a>
+            <a onclick="filterSelection('X-2')">Novella 2</a>
+            <a onclick="filterSelection('X-3')">Novella 3</a>
+            <a onclick="filterSelection('X-4')">Novella 4</a>
+            <a onclick="filterSelection('X-5')">Novella 5</a>
+            <a onclick="filterSelection('X-6')">Novella 6</a>
+            <a onclick="filterSelection('X-7')">Novella 7</a>
+            <a onclick="filterSelection('X-8')">Novella 8</a>
+            <a onclick="filterSelection('X-9')">Novella 9</a>
+            <a onclick="filterSelection('X-10')">Novella 10</a>
+          </div>
+        </div>
+      </div>
+      <form class="example" action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search2" />
+        <button class="bg-blue" type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+    <!-- Sezione contenitore delle Card (dopo la barra di ricerca) -->
+    <div class="container">
+      <!-- CARD 1 -->
+      <div class="filterDiv V-8"> <!--ho usato Filter DIV Elements dal w3schools e ci ho inserito dentro le card-->
+        <div class="equalcolumn">
+          <div class="card">
+            <div class="img-Botticelli"></div>
+            <div class="container">
+              <h4><b>Botticelli, Sandro - Scenes from The Story of Nastagio degli Onesti</b></h4>
+              <p><span>Data di creazione:</span> 1483</p>
+              <p><span>Tipologia:</span> Pittura su tavola (ciclo di quattro pannelli)</p>
+              <p><span>Luogo di conservazione:</span> Museo Nacional del Prado, Madrid (pannelli I-III); collezione privata, Palazzo Pucci, Firenze (pannello IV)</p>
+              <a href="item.html" class="btn default underline" title="Vai all'opera">Vai all'opera</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="filterDiv all">
+        <div class="equalcolumn">
+          <div class="card">
+            <div class="img-Kent"></div>
+            <div class="container">
+              <h4><b>Kent, Rockwell (ill.) - The Decameron of Giovanni Boccaccio</b></h4>
+              <p><span>Data di pubblicazione:</span> 1949</p>
+              <p><span>Tipologia:</span> Edizione illustrata</p>
+              <p><span>Editore:</span> Garden City Books</p>
+              <p><span>Luogo di edizione:</span> Garden City (New York), USA</p>
+              <a href="#" class="btn default" title="Vai all'opera">Vai all'opera</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="filterDiv V-8">
+        <div class="equalcolumn">
+          <div class="card">
+            <div class="img-Kent-2"></div>
+            <div class="container">
+              <h4><b>Kent, Rockwell - La caccia infernale (tavola da The Decameron of G. Boccaccio)</b></h4>
+              <p><span>Data di pubblicazione:</span> 1949</p>
+              <p><span>Tipologia:</span> Illustrazione (tavola a colori)</p>
+              <p><span>Editore:</span> Garden City Books</p>
+              <p><span>Luogo di edizione:</span> Garden City (New York), USA</p>
+              <a href="#" class="btn default" title="Vai all'opera">Vai all'opera</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="filterDiv all">
+        <div class="equalcolumn">
+          <div class="card">
+            <div class="img-Pasolini"></div>
+            <div class="container">
+              <h4><b>Pasolini, Pier Paolo - Il Decameron</b></h4>
+              <p><span>Data di uscita:</span> 1971</p>
+              <p><span>Tipologia:</span> Film (commedia, storico, grottesco)</p>
+              <p><span>Durata:</span> 110 min</p>
+              <p><span>Luogo di produzione:</span> Cinecittà, Roma, Italia</p>
+              <a href="#" class="btn default" title="Vai all'opera">Vai all'opera</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="filterDiv all">
+        <div class="equalcolumn">
+          <div class="card">
+            <div class="img-Busi"></div>
+            <div class="container">
+              <h4><b>Busi, Aldo - Decamerone (traduzione/riscrittura)</b></h4>
+              <p><span>Data di pubblicazione:</span> 1991</p>
+              <p><span>Tipologia:</span> Edizione a stampa</p>
+              <p><span>Editore:</span> BUR Rizzoli</p>
+              <p><span>Luogo di edizione:</span> Milano, Italia</p>
+              <a href="#" class="btn default" title="Vai all'opera">Vai all'opera</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="filterDiv X-10">
+        <div class="equalcolumn">
+          <div class="card">
+            <div class="img-Anonimo"></div>
+            <div class="container">
+              <h4><b>Maestro di Griselda (Anonimo) - Storie di Griselda</b></h4>
+              <p><span>Data di creazione:</span> 1494 ca.</p>
+              <p><span>Tipologia:</span> Pittura su tavola</p>
+              <p><span>Luogo di conservazione:</span> National Gallery, Londra, Regno Unito</p>
+              <a href="#" class="btn default" title="Vai all'opera">Vai all'opera</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 7 -->
+      <div class="filterDiv V-1">
+        <div class="equalcolumn">
+          <div class="card">
+            <div class="img-Mieris"></div>
+            <div class="container">
+              <h4><b>Van Mieris, Willem - Cimone e Efigenia</b></h4>
+              <p><span>Data di creazione:</span> 1698</p>
+              <p><span>Tipologia:</span> Dipinto a olio</p>
+              <p><span>Luogo di conservazione:</span> Museo Poldi Pezzoli, Milano, Italia</p>
+              <a href="#" class="btn default" title="Vai all'opera">Vai all'opera</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 8 -->
+      <div class="filterDiv IV-5">
+        <div class="equalcolumn">
+          <div class="card">
+            <div class="img-Hunt"></div>
+            <div class="container">
+              <h4><b>Hunt, William Holman - Isabella and the Pot of Basil</b></h4>
+              <p><span>Data di creazione:</span> 1867-1868</p>
+              <p><span>Tipologia:</span> Dipinto a olio</p>
+              <p><span>Luogo di conservazione:</span> Laing Art Gallery, Newcastle upon Tyne, Regno Unito</p>
+              <a href="#" class="btn default" title="Vai all'opera">Vai all'opera</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 9 -->
+      <div class="filterDiv IV-1">
+        <div class="equalcolumn">
+          <div class="card">
+            <div class="img-Mei"></div>
+            <div class="container">
+              <h4><b>Mei, Bernardino - Ghismunda</b></h4>
+              <p><span>Data di creazione:</span> 1650 ca.</p>
+              <p><span>Tipologia:</span> Dipinto a olio</p>
+              <p><span>Luogo di conservazione:</span> Pinacoteca Nazionale di Siena, Italia</p>
+              <a href="#" class="btn default" title="Vai all'opera">Vai all'opera</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 10 -->
+      <div class="filterDiv V-9">
+        <div class="equalcolumn">
+          <div class="card">
+            <div class="img-Basaldella"></div>
+            <div class="container">
+              <h4><b>Basaldella, Mirko - Federigo degli Alberighi</b></h4>
+              <p><span>Data di creazione:</span> 1967 ca.</p>
+              <p><span>Tipologia:</span> Disegno</p>
+              <p><span>Luogo di conservazione:</span> Certaldo (FI), Italia</p>
+              <a href="#" class="btn default" title="Vai all'opera">Vai all'opera</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 11 - Audiolibro -->
+      <div class="filterDiv V-8">
+        <div class="equalcolumn">
+          <div class="card">
+            <div class="img-Audiolibro"></div>
+            <div class="container">
+              <h4><b>Carini, Claudio (voce narrante) - Decameron. Novelle scelte</b></h4>
+              <p><span>Data di pubblicazione:</span> 2008</p>
+              <p><span>Tipologia:</span> Audiolibro</p>
+              <p><span>Editore:</span> Recitar Leggendo Audiolibri</p>
+              <p><span>Durata:</span> 2h 28min complessive (Nastagio degli Onesti: 14'27")</p>
+              <p><span>Luogo di edizione:</span> Perugia, Italia</p>
+              <a href="#" class="btn default" title="Vai all'opera">Vai all'opera</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 12 - Miniatura -->
+      <div class="filterDiv V-9">
+        <div class="equalcolumn">
+          <div class="card">
+            <div class="img-Miniatura"></div>
+            <div class="container">
+              <h4><b>Ceffini, Ludovico (copista/miniatore) - Federigo degli Alberighi invita a pranzo monna Giovanna</b></h4>
+              <p><span>Data di creazione:</span> 1427 ca.</p>
+              <p><span>Tipologia:</span> Manoscritto miniato (miniatura, f. 188v)</p>
+              <p><span>Luogo di conservazione:</span> Bibliothèque nationale de France, Parigi, Francia (ms. Italien 63)</p>
+              <a href="#" class="btn default" title="Vai all'opera">Vai all'opera</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAGINAZIONE (Posizionata dentro, dopo tutte le card) -->
+      <div>
+        <div class="pagination">
+          <a href="#" title="Prev">&laquo;</a>
+          <a href="#" class="active" title="1">1</a>
+          <a href="#" title="2">2</a>
+          <a href="#" title="3">3</a>
+          <a href="#" title="4">4</a>
+          <a href="#" title="5">5</a>
+          <a href="#" title="6">6</a>
+          <a href="#" title="Next">&raquo;</a>
+        </div>
+      </div>
+    </div> <!-- CHIUSURA CORRETTA DI <div class="tab"> -->
+  </div> <!-- CHIUSURA DI <div class="rightcolumn"> -->
+  <!-- footer -->
+  <footer>
+    <div class="footer">
+     <p><a href="#" title="Credits">Credits</a> | <a href="#" title="Licenze">Licenze</a> | <a href="#" title="Piano di progetto">Web Project Plan</a> </p>
+    </div>
+   <div class="copyright">
+    <p>&copy; Copyright (c) 2026 by <em>Benedetta Bettazzi</em>. 
+    Università di Bologna</p>
+  </div>
+</footer>
+<!-- script -->
+<script src="js/main.js"></script>
+</body>
+</html>

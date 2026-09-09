@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+	<fileDesc>
+ 		<titleStmt>
+ 			<title>Decameron: versione elettronica basata sull'edizione a cura di Vittore Branca, Einaudi, 1992</title>
+ 			<author ref="http://viaf.org/viaf/64002165">Boccaccio, Giovanni</author>
+ 			<editor>Riva, Massimo</editor>
+ 			<sponsor>Italian Studies Department's Virtual Humanities Lab at Brown University</sponsor>
+ 			<respStmt>
+ 				<name>Bettazzi, Benedetta</name>
+ 				<resp>Codifica del testo</resp>
+ 			</respStmt>
+ 		</titleStmt>
+ 		<publicationStmt>
+ 			<publisher>Università di Bologna</publisher>
+ 		</publicationStmt>
+ 		<sourceDesc>
+ 			<listBibl>
+ 				<bibl>Boccaccio, Giovanni, Decameron, a cura di V. Branca, Einaudi, Torino, 1992. Giornata V, Novella 8.</bibl> 
+ 				<bibl>Text freely available on Decameron Web at https://webhelper.brown.edu/decameron/.</bibl>
+ 			</listBibl>
+ 		</sourceDesc>
+ 	</fileDesc>
+ 	<profileDesc>
+ 		<particDesc>
+ 			<listPerson>
+				<person role="person" xml:id="GB" sameAs="http://viaf.org/viaf/64002165">
+ 					<persName>Giovanni Boccaccio</persName>
+ 				</person>
+				<person role="character" xml:id="NdO" sameAs="https://www.wikidata.org/wiki/Q1232587">
+ 					<persName>Nastagio degli Onesti</persName>
+				</person>
+				<person role="character" xml:id="donna-amata" sameAs="https://www.treccani.it/enciclopedia/traversari_(Dizionario-Biografico)/">
+					<persName>la figlia di messer Paolo dei Traversari</persName>
+				</person>
+				<person role="character" xml:id="PdT" sameAs="https://www.treccani.it/enciclopedia/paolo-traversari_res-d36c2fd2-87ed-11dc-8e9d-0016357eee51_(Dizionario-Biografico)/">
+					<persName>messer Paolo Traversaro</persName>
+				</person>
+				<person role="character" xml:id="cav">
+					<persName>il cavaliere della "caccia infernale" (Guido degli Anastagi)</persName>
+				</person>
+				<person role="character" xml:id="malvagia-femina">
+				    <persName>la giovane della "caccia infernale"</persName>
+				</person>
+				<person role="character" xml:id="parenti-di-NdO">
+					<persName>i parenti di Nastagio degli Onesti</persName>
+				</person>
+				<person role="character" xml:id="Lauretta" sameAs="http://viaf.org/viaf/211119565">
+					<persName>Lauretta</persName>
+				</person>
+				<person role="character" xml:id="Filomena" sameAs="http://viaf.org/viaf/188681577">
+					<persName>Filomena</persName>
+				</person>
+				<person role="character" xml:id="Fiammetta" sameAs="http://viaf.org/viaf/209141703">
+					<persName>Fiammetta, la "reina" della V Giornata</persName>
+				</person>
+ 			</listPerson>
+ 		</particDesc>
+ 		<settingDesc>
+ 			<listPlace>
+				<place xml:id="Firenze" sameAs="https://www.geonames.org/3176959/firenze.html">
+					<placeName>Firenze</placeName>
+ 				</place>
+ 				<place xml:id="Ravenna" sameAs="https://www.geonames.org/6540121/ravenna.html">
+ 					<placeName>Ravenna</placeName>
+				</place>
+				<place xml:id="Chiassi" sameAs="https://www.geonames.org/3179219/classe.html">
+					<placeName>Chiassi (Classe, Ravenna)</placeName>
+				</place>
+				<place xml:id="Francia" sameAs="https://www.geonames.org/3017382/republic-of-france.html">
+					<placeName>Francia</placeName>
+				</place>
+				<place xml:id="Spagna" sameAs="https://www.geonames.org/2510769/kingdom-of-spain.html">
+					<placeName>Ispagna</placeName>
+				</place>
+ 			</listPlace>
+ 		</settingDesc>
+ 		<textClass>
+			<keywords scheme="http://id.loc.gov/authorities/subjects">
+				<list>
+					<item><term type="subject" ref="http://id.loc.gov/authorities/subjects/sh85121908">Novella</term></item>
+					<item><term type="subject" xml:id="Giornata" ref="http://id.loc.gov/authorities/subjects/sh85051540">Giornata</term></item>
+					<item><term type="subject" xml:id="crudeltà" ref="http://vocab.getty.edu/page/aat/300055310">la crudeltà delle donne verso gli amanti</term></item>
+					<item><term type="subject" xml:id="scopo" ref="http://id.loc.gov/authorities/subjects/sh85037854">l'utile e il dilettevole</term></item>
+					<item><term type="subject" xml:id="amor-cortese" ref="http://id.loc.gov/authorities/subjects/sh85033581">amor cortese</term></item>
+					<item><term type="subject" xml:id="caccia-infernale" ref="http://id.loc.gov/authorities/subjects/sh85146687">caccia infernale</term></item>
+					<item><term type="subject" xml:id="amore" ref="http://id.loc.gov/authorities/subjects/sh85078519">amore</term></item>
+					<item><term type="subject" xml:id="lieto-fine" ref="http://id.loc.gov/authorities/subjects/sh2007004834">lieto fine</term></item>
+				</list>
+ 			</keywords>
+ 		</textClass>
+	</profileDesc>
+</teiHeader>
+<text>
+	<body xml:lang="it">
+		<head type="main">Quinta <term type="subject" ref="#Giornata">Giornata</term> - Novella Ottava</head>
+		<head type="sub"><persName type="character" ref="#NdO">Nastagio degli Onesti</persName>, amando <persName type="character" ref="#donna-amata">una de' Traversari</persName>, spende le sue ricchezze senza essere amato; vassene pregato da' suoi a <placeName ref="#Chiassi">Chiassi</placeName>; quivi vede cacciare a un <persName type="character" ref="#cav">cavaliere</persName> <persName type="character" ref="#malvagia-femina">una giovane</persName> e ucciderla e divorarla da due cani; Invita i <persName type="character" ref="#parenti-di-NdO">parenti suoi</persName> e <persName type="character" ref="#donna-amata">quella donna amata da lui</persName> ad un desinare, la quale vede questa medesima <persName type="character" ref="#malvagia-femina">giovane</persName> sbranare e temendo di simile avvenimento prende per marito <persName type="character" ref="#NdO">Nastagio</persName>.</head>
+		<div type="section">
+			<ab>Come la <persName type="character" ref="#Lauretta">Lauretta</persName> si tacque, cosí per comandamento della <persName type="character" ref="#Fiammetta">reina</persName> cominciò <persName type="character" ref="#Filomena">Filomena</persName>:</ab>
+		</div>
+		<div type="section">
+			<ab>Amabili donne, come in noi è la pietà commendata, cosí ancora in noi è dalla divina giustizia rigidamente la <term type="subject" ref="#crudeltà">crudeltà</term> vendicata: il che acciò che io vi dimostri e <term type="subject" ref="#scopo">materia vi dea di cacciarla del tutto da voi</term>, mi piace di dirvi una novella non meno di compassion piena che <term type="subject" ref="#scopo">dilettevole</term>.</ab>
+			<div type="subsection">
+				<p>In <placeName ref="#Ravenna">Ravenna</placeName>, <placeName ref="#Ravenna">antichissima città di Romagna</placeName>, furon già assai nobili e gentili uomini, tra' quali un giovane chiamato <persName type="character" ref="#NdO">Nastagio degli Onesti</persName>, per la morte del padre di lui e d'un suo zio, senza stima rimaso ricchissimo. Il quale, sí come de' giovani avviene, essendo senza moglie <term type="subject" ref="#amore">s'innamorò</term> d'una <persName type="character" ref="#donna-amata">figliuola di <persName type="character" ref="#PdT">messer Paolo Traversaro</persName>, giovane troppo piú nobile che esso non era</persName>, prendendo speranza con le sue opere di doverla trarre ad amar lui. Le quali, quantunque grandissime, belle e laudevoli fossero, non solamente non gli giovavano, anzi pareva che gli nocessero, tanto cruda e dura e salvatica gli si mostrava la <persName type="character" ref="#donna-amata">giovinetta amata</persName>, forse per la sua singular bellezza o per la sua nobiltà sí altiera e disdegnosa divenuta, che né egli né cosa che gli piacesse le piaceva. La qual cosa era tanto a <persName type="character" ref="#NdO">Nastagio</persName> gravosa a comportare, che per dolore piú volte dopo essersi doluto gli venne in disidero d'uccidersi; poi, pur tenendosene, molte volte si mise in cuore di doverla del tutto lasciare stare, o se potesse d'averla in odio come ella aveva lui. Ma invano tal proponimento prendeva, per ciò che pareva che quanto piú la speranza mancava, tanto piú multiplicasse il suo <term type="subject" ref="#amore">amore</term>.</p>
+
+				<p>Perseverando adunque il giovane e <term type="subject" ref="#amor-cortese">nello amare e nello spendere smisuratamente</term>, parve a certi suoi amici e parenti che egli sé e 'l suo avere parimente fosse per consumare; per la qual cosa piú volte il pregarono e consigliarono che si dovesse di <placeName ref="#Ravenna">Ravenna</placeName> partire e in alcuno altro luogo per alquanto tempo andare a dimorare; per ciò che, cosí faccendo, scemerebbe l'amore e le spese. Di questo consiglio piú volte fece beffe <persName type="character" ref="#NdO">Nastagio</persName>; ma pure, essendo da loro sollecitato, non potendo tanto dir di no, disse di farlo; e fatto fare un grande apparecchiamento, come se in <placeName ref="#Francia">Francia</placeName> o in <placeName ref="#Spagna">Ispagna</placeName> o in alcuno altro luogo lontano andar volesse, montato a cavallo e da' suoi molti amici accompagnato di <placeName ref="#Ravenna">Ravenna</placeName> uscí e andossen a un luogo fuor di <placeName ref="#Ravenna">Ravenna</placeName> forse tre miglia, che si chiama <placeName ref="#Chiassi">Chiassi</placeName>; e quivi fatti venir padiglioni e trabacche, disse a coloro che accompagnato l'aveano che starsi volea e che essi a <placeName ref="#Ravenna">Ravenna</placeName> se ne tornassono. Attendatosi adunque quivi <persName type="character" ref="#NdO">Nastagio</persName> cominciò a fare la piú bella vita e la piú magnifica che mai si facesse or questi e or quegli altri invitando a cena e a delinare, come usato s'era.</p>
+
+				<p>Ora avvenne che, venendo quasi all'entrata di maggio, essendo un bellissimo tempo ed egli entrato in pensiero della sua <persName type="character" ref="#donna-amata"><term type="subject" ref="#crudeltà">crudel</term> donna</persName>, comandato a tutta la sua famiglia che solo il lasciassero per piú potere pensare a suo piacere, piede innanzi piè sé medesimo trasportò pensando infino nella pigneta. E essendo già passata presso che la quinta ora del giorno ed esso bene un mezzo miglio per la pigneta entrato, non ricordandosi di mangiare né d'alta cosa, subitamente gli parve udire un grandissimo pianto e guai altissimi messi da una donna; per che, rotto il suo dolce pensiero, alzò il capo per veder che fosse e maravigliossi nella pigneta veggendosi. E oltre a ciò, <term type="subject" ref="#caccia-infernale">davanti guardandosi, vide venire per un boschetto assai folto d'albuscelli e di pruni, correndo verso il luogo dove egli era, <persName type="character" ref="#malvagia-femina">una bellissima giovane ignuda</persName>, scapigliata e tutta graffiata dalle frasche e da' pruni, piagnendo e gridando forte mercé; e oltre a questo le vide a' fianchi due grandi e fieri mastini, li quali duramente appresso correndole spesse volte crudelmente dove la giugnevano la mordevano; e dietro a lei vide venire sopra un corsiere nero <persName type="character" ref="#cav">un cavalier bruno</persName>, forte nel viso crucciato, con uno stocco in mano, lei di morte con parole spaventevoli e villane minacciando.</term> Questa cosa a un'ora meraviglia e spavento gli mise nell'animo, e ultimamente compassione della <persName type="character" ref="#malvagia-femina">sventurata donna</persName>, dalla qual nacque disidero di liberarla da prima fatta angoscia e morte, se el potesse. Ma senza arme trovandosi, ricorse a prendere un ramo d'albero in luogo di bastone e cominciò a farsi incontro a' cani e contro al <persName type="character" ref="#cav">cavaliere</persName>.</p>
+
+				<p>Ma il <persName type="character" ref="#cav">cavaliere</persName> che questo vide gli gridò di lontano: <q type="spoken" who="#cav">"<persName type="character" ref="#NdO">Nastagio</persName>, non t'impacciare, lascia fare a' cani e a me quello che questa <persName type="character" ref="#malvagia-femina">malvagia femina</persName> ha meritato."</q></p>
+				<p>E cosí dicendo, i cani, presa forte la giovane ne' fianchi, la fermarono, e il cavaliere sopragiunto smontò da cavallo; al quale Nastagio avvicinatosi disse: <q type="spoken" who="#NdO">"Io non so chi tu ti se', che me cosí cognosci ma tanto ti dico che gran viltà è d'un cavaliere armato volere uccidere una femina ignuda, e averle i cani alle coste messi come se ella fosse una fiera salvatica: io per certo la difenderò quant'io potrò."</q></p>
+
+				<p>Il <persName type="character" ref="#cav">cavaliere</persName> allora disse:<q type="spoken" who="#cav">"<persName type="character" ref="#NdO">Nastagio</persName>, io fui d'una medesima terra teco, ed eri tu ancora piccol fanciullo quando io, il quale fui chiamato <persName type="character" ref="#cav">messer Guido degli Anastagi</persName>, era troppo piú innamorato di costei che tu ora non se' di <persName type="character" ref="#donna-amata">quella de' Traversari</persName>; e per la sua fierezza e <term type="subject" ref="#crudeltà">crudeltà</term> andò sí la mia sciagura, che io un dí con questo stocco, il quale tu mi vedi in mano, come disperato m'uccisi, e sono alle pene eternali dannato. Né stette poi guari tempo che costei, la qual della mia morte fu lieta oltre misura, morí, e per lo peccato della sua <term type="subject" ref="#crudeltà">crudeltà</term> e della letizia avuta de' miei tormenti, non pentendosene, come colei che non credeva in ciò aver peccato ma meritato, similmente fu ed è dannata alle pene del Ninferno. Nel quale <term type="subject" ref="#caccia-infernale">come ella discese, cosí ne fu e a lei e a me per pena dato, a lei di fuggirmi davanti e a me, che già cotanto l'amai, di seguitarla come mortal nimica</term>, non come amata donna; e quante volte io la giungo, tante con questo stocco, col quale io uccisi me, uccido lei e aprola per ischiena, e quel <term type="subject" ref="#crudeltà">cuor duro e freddo, nel qual mai né amor né pietà poterono entrare</term>, con l'altre interiora insieme, sí come tu vedrai incontanente, le caccio di corpo e dolle mangiare a questi cani. Né sta poi grande spazio che ella, sí come la giustizia e la potenzia di <persName>Dio</persName> vuole, come se morta non fosse stata, risurge e da capo incomincia la dolorosa fugga, e i cani e io a seguitarla. E avviene che ogni venerdí in su questa ora io la giungo qui e qui ne fo lo strazio che vederai; e gli altri dí non creder che noi riposiamo, ma giungola in altri luoghi ne' quali ella crudelmente contro a me pensò o operò; e essendole d'amante divenuto nimico, come tu vedi, me la conviene in questa guisa tanti anni seguitare quanti mesi ella fu contro a me crudele. Adunque lasciami la divina giustizia mandare a essecuzione, né ti volere opporre a quello che tu non potresti contrastare."</q></p>
+
+				<p><persName type="character" ref="#NdO">Nastagio</persName>, udendo queste parole, tutto timido divenuto e quasi non avendo pelo addosso che arricciato non fosse, tirandosi addietro e riguardando alla <persName type="character" ref="#malvagia-femina">misera giovane</persName>, cominciò pauroso ad aspettare quello che facesse il <persName type="character" ref="#cav">cavaliere</persName>; il quale, finito il suo ragionare, a guisa d'un cane rabbioso con lo stocco in mano corse addosso alla <persName type="character" ref="#malvagia-femina">giovane</persName>, la quale inginocchiata e da' due mastini tenuta forte gli gridava mercé, e a quella con tutta sua forza diede per mezzo il petto e passolla dall'altra parte. Il qual colpo come la <persName type="character" ref="#malvagia-femina">giovane</persName> ebbe ricevuto, cosí cadde boccone sempre piagnendo e gridando: e il <persName type="character" ref="#cav">cavaliere</persName>, messo mano ad un coltello, quella aprí nelle reni, e fuori trattone il cuore e ogni altra cosa da torno, a' due mastini il gittò, li quali affamatissimi incontanente il mangiarono. Né stette guari che la <persName type="character" ref="#malvagia-femina">giovane</persName>, quasi niuna di queste cose stata fosse, subitamente si levò in piè e cominciò a fuggire verso il mare, e i cani appresso di lei sempre lacerandola: e il <persName type="character" ref="#cav">cavaliere</persName>, rimontato a cavallo e ripreso il suo stocco, la cominciò a seguitare, e in picciola ora si dileguarono in maniera che piú <persName type="character" ref="#NdO">Nastagio</persName> non gli poté vedere.</p>
+
+				<p>Il quale, avendo queste cose vedute, gran pezza stette tra pietoso e pauroso: e dopo alquanto gli venne nella mente questa cosa dovergli molto poter valere, poi che ogni venerdí avvenia; per che, segnato il luogo, a' suoi famigliari se ne tornò, e appresso, quando gli parve, mandato per piú suoi <persName type="character" ref="#parenti-di-NdO">parenti e amici</persName>, disse loro: <q type="spoken" who="#NdO">"Voi m'avete lungo tempo stimolato che io d'amare questa mia nemica mi rimanga e ponga fine al mio spendere, e io son presto di farlo dove voi una grazia m'impetriate, la quale è questa: che venerdí che viene voi facciate sí che <persName type="character" ref="#PdT">messer Paolo Traversari</persName> e la moglie e la <persName type="character" ref="#donna-amata">figliuola</persName> e tutte le donne lor parenti, e altre chi vi piacerà, qui sieno a desinar meco. Quello per che io questo voglia, voi il vedrete allora."</q></p>
+
+				<p>A costor parve questa assai piccola cosa a dover fare; e a <placeName ref="#Ravenna">Ravenna</placeName> tornati, quando tempo fu, coloro invitarono li quali <persName type="character" ref="#NdO">Nastagio</persName> voleva, e come che dura cosa fosse il potervi menare la <persName type="character" ref="#donna-amata">giovane da Nastagio amata</persName>, pur v'andò con l'altre insieme. <persName type="character" ref="#NdO">Nastagio</persName> fece magnificamente apprestare da mangiare e fece le tavole mettere sotto i pini dintorno a quel luogo dove veduto aveva lo strazio della <persName type="character" ref="#malvagia-femina">crudel donna</persName>; e fatti mettere gli uomini e le donne a tavolo, sí ordinò, che appunto la <persName type="character" ref="#donna-amata">giovane amata da lui</persName> fu posta a sedere di rimpetto al luogo dove doveva il fatto intervenire.</p>
+
+				<p>Essendo adunque già venuta l'ultima vivanda, e il romore disperato della <persName type="character" ref="#malvagia-femina">cacciata giovane</persName> da tutti fu cominciato a udire. Di che maravigliandosi forte ciascuno e domandando che ciò fosse e niuno sappiendol dire, levatisi tutti diritti e riguardando che ciò potesse essere, videro la <persName type="character" ref="#malvagia-femina">dolente giovane</persName> e 'l <persName type="character" ref="#cav">cavaliere</persName> e' cani; né guari stette che essi tutti furon quivi tra loro. Il romore fu fatto grande e a' cani e al <persName type="character" ref="#cav">cavaliere</persName>, e molti per aiutare la <persName type="character" ref="#malvagia-femina">giovane</persName> si fecero innanzi; ma il <persName type="character" ref="#cav">cavaliere</persName>, parlando loro come a <persName type="character" ref="#NdO">Nastagio</persName> aveva parlato, non solamente gli fece indietro tirare ma tutti gli spaventò e riempié di meraviglia; e faccendo quello che altra volta aveva fatto, quante donne v'aveva (ché ve ne aveva assai che parenti erano state e della <persName type="character" ref="#malvagia-femina">dolente giovane</persName> e del <persName type="character" ref="#cav">cavaliere</persName> e che si ricordavano dell'amore e della morte di lui) tutte cosí miseramente piagnevano come se a se medesime quello avesser veduto fare. La qual cosa al suo termine fornita, e andata via la <persName type="character" ref="#malvagia-femina">donna</persName> e 'l <persName type="character" ref="#cav">cavaliere</persName>, mise costoro che ciò veduto aveano in molti e varii ragionamenti. Ma tra gli altri che piú di spavento ebbero, fu la <persName type="character" ref="#donna-amata">crudel giovane da Nastagio amata</persName>, la quale ogni cosa distintamente veduta avea e udita e conosciuto che a sé piú che a altra persona che vi fosse queste cose toccavano, ricordandosi della <term type="subject" ref="#crudeltà">crudeltà</term> sempre da lei usata verso <persName type="character" ref="#NdO">Nastagio</persName>; per che già le parea fuggire dinanzi da lui adirato e avere i mastini a' fianchi.</p>
+
+				<p>E tanta fu la paura che di questo le nacque, che, acciò che questo a lei non avvenisse, prima tempo non si vide, il quale quella medesima sera prestato le fu, che ella, avendo l'odio in amor tramutato, una sua fida cameriera segretamente a <persName type="character" ref="#NdO">Nastagio</persName> mandò, la quale da parte di lei il pregò che gli dovesse piacer d'andare a lei, per ciò ch'ella era presta di far tutto ciò che fosse piacer di lui. Alla qual <persName type="character" ref="#NdO">Nastagio</persName> fece rispondere che questo gli era a grado molto, ma che, dove le piacesse, con onor di lei voleva il suo piacere, e questo era sposandola per moglie. La <persName type="character" ref="#donna-amata">giovane</persName>, la qual sapeva che da altrui che da lei rimaso non era che moglie di <persName type="character" ref="#NdO">Nastagio</persName> stata non fosse, gli fece risponder che le piacea. Per che, essendo ella medesima la messaggera, al padre e alla madre disse che era contenta d'essere sposa di <persName type="character" ref="#NdO">Nastagio</persName>, di che essi furon contenti molto.</p>
+
+				<p>E la domenica seguente <persName type="character" ref="#NdO">Nastagio</persName> sposatala e fatte le sue nozze, <term type="subject" ref="#lieto-fine">con lei piú tempo lietamente visse</term>. E non fu questa paura cagione solamente di questo bene, anzi sí tutte le ravignane donne paurose ne divennero, che sempre poi troppo piú arrendevoli a' piaceri degli uomini furono che prima state non erano.</p>
+			</div>
+		</div>
+	</body>
+</text>
+</TEI>

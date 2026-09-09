@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <title>Scenes from The Story of Nastagio degli Onesti - Sandro Botticelli | La fortuna delle novelle di Boccaccio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- 1. Stili generali di tutto il sito -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- 2. Stili specifici della lista (sovrascrive solo ciò che serve) -->
+    <link rel="stylesheet" href="style/style-item.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Metadati Dublin Core -->
+    <meta name="DC.Title" content="Scenes from The Story of Nastagio degli Onesti">
+    <meta name="DC.Identifier" content="ITEM-01">
+    <meta name="DC.Creator" content="Botticelli, Sandro">
+    <meta name="DC.Contributor" content="Boccaccio, Giovanni">
+    <meta name="DC.Subject" content="Decameron; Giornata V, Novella 8; Nastagio degli Onesti; Pittura rinascimentale">
+    <meta name="DC.Description" xml:lang="it" content="Il ciclo raffigura la celebre novella di Nastagio degli Onesti tratta dalla quinta giornata del Decameron di Boccaccio. Nastagio, nobile ravennate rifiutato dalla donna amata, si ritira addolorato nella pineta di Classe dove assiste a una visione terrificante: una donna nuda inseguita e punita da un cavaliere e dai suoi cani per la sua crudeltà in vita. Comprendendo la lezione esemplare della caccia infernale, Nastagio organizza un banchetto nello stesso luogo invitando la sua amata, la quale, spaventata dalla visione, acconsente infine a sposarlo. Il ciclo fu commissionato da Lorenzo il Magnifico per il matrimonio di Giannozzo Pucci e Lucrezia Bini nel 1483.">
+    <meta name="DC.Date" content="1483">
+    <meta name="DC.Type" content="Image">
+    <meta name="DC.Format" content="image/jpeg">
+    <meta name="DC.Publisher" content="Museo Nacional del Prado (Pannelli I-III); Collezione privata (Pannello IV)">
+    <meta name="DC.Rights" content="Copyright © Museo Nacional del Prado">
+    <!-- Riconciliazione Linked Open Data (LOD) -->
+    <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/">
+    <link rel="DCTERMS.creator" href="https://viaf.org/viaf/179145970098632250973">
+    <link rel="DCTERMS.contributor" href="https://viaf.org/viaf/64002165/">
+    <link rel="DCTERMS.spatial" href="https://www.geonames.org/3176959/firenze.html">
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="header">
+       <img src="img/layout/Decamerone.jpg" class="center" alt="Decamerone"/>
+      </div>
+    </header>
+
+    <!-- navigation bar -->
+    <nav>
+      <div class="topnav">
+        <a class="navbar-brand" href="#">La fortuna delle novelle di Boccaccio</a>
+        <a href="index.html" title="Link alla home">&#9812;Homepage</a>
+        <a href="index.html#scopri-di-piu" title="Link al progetto">&#9813;Progetto</a>
+        <div class="dropdown">
+          <button class="dropbtn active">&#9815;Catalogo <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="list-items.html">Lista</a>
+            <a href="#">Le novelle</a>
+            <a href="#">Le parole chiave</a>
+            <a href="#">Le tipologie</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">&#9814;Percorsi interattivi <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="map.html" title="Link alla mappa su Leaflet">La mappa dei luoghi</a>
+            <a href="#" title="Link alla linea del tempo">La linea del tempo</a>
+          </div>
+        </div>
+        <a href="data.html" title="Vai alla pagina dei Dati e Riconciliazione">&#9816;Dati</a>
+        <!--barra di search in alto a destra-->
+        <form class="search-form">
+            <input type="text" placeholder="Search..">
+            <button class="search-button" type="submit">Cerca</button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- three columns layout: Left, Main, Right (Aside) -->
+    <div class="row">
+      <!-- left column -->
+      <div class="leftcolumn">
+        <!-- breadcrumbs -->
+        <div>
+          <ul class="breadcrumb" id="breadcrumb-list">
+            <!-- Generato automaticamente da main.js -->
+          </ul>
+        </div>
+
+        <!-- scopri di più sull'opera -->
+        <div>
+          <p class="bold">Scopri di più sull'opera</p>
+          <a
+            href="https://it.wikipedia.org/wiki/Nastagio_degli_Onesti,_primo_episodio"
+            class="btn bg-pink"
+            title="Vedi Nastagio degli Onesti su Wikipedia"
+            target="_blank">Opera su Wikipedia</a>   
+        </div>
+
+        <div>
+          <p class="bold">Guarda il video di presentazione</p>
+          <p>
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/uILX9-pZVXI" title="Sandro Botticelli | Nastagio degli Onesti, parte I, II e III" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="responsive"></iframe>
+          </p>
+        </div>
+
+        <div class="responsive">
+          <p class="bold">Ascolta la presentazione audio</p>
+          <p>
+            <audio controls style="width: 100%;">
+              <source src="#" type="audio/mpeg">Il tuo browser non supporta l'elemento audio.
+            </audio>
+          </p>
+        </div>
+
+        <div class="sidebar-box">
+          <h3>Metadati XML/DC</h3>
+          <p>Scarica il file completo dei metadati in formato standard Dublin Core (XML):</p>
+          <a href="item_DC.xml" download="item_DC.xml" class="btn bg-blue">
+            Download XML/DC
+          </a>
+        </div>
+
+      </div>
+
+      <!-- main column -->
+      <div class="maincolumn">
+        <h2>Scenes from The Story of Nastagio degli Onesti - Sandro Botticelli</h2>
+
+        <!-- Slideshow delle 4 tavole -->
+        <div class="slideshow-container">
+          <div class="mySlides fade active">
+            <div class="numbertext">1 / 4</div>
+            <img src="img/opere/Botticelli - Nastagio degli Onesti pt.1.jpg" class="slide-img" alt="Primo episodio: Nastagio incontra la donna e il cavaliere nel pineto">
+            <div class="slide-caption">Primo episodio: Nastagio vaga per la pineta di Ravenna ed assiste alla caccia infernale</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="img/opere/Botticelli - Nastagio degli Onesti pt.2.jpg" class="slide-img" alt="Secondo episodio: L'uccisione della donna e lo squartamento">
+            <div class="slide-caption">Secondo episodio: Il cavaliere squarta la donna e ne getta i visceri ai cani</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="img/opere/Botticelli - Nastagio degli Onesti pt.3.jpg" class="slide-img" alt="Terzo episodio: Il banchetto nella pineta">
+            <div class="slide-caption">Terzo episodio: Il banchetto organizzato da Nastagio nella pineta per spaventare l'amata</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="img/opere/Botticelli - Nastagio degli Onesti pt.4.jpg" class="slide-img" alt="Quarto episodio: Il banchetto di nozze">
+            <div class="slide-caption">Quarto episodio: Il banchetto di nozze di Nastagio degli Onesti e la figlia di Paolo Traversari</div>
+          </div>
+
+          <!-- Pulsanti Avanti / Indietro -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- Indicatori a pallino per lo slideshow -->
+        <div class="dots-container">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <div class="border-section">
+          <!-- Metadati dell'opera -->
+          <div class="bg-gray metadata pd-12">
+            <h3>Scheda descrittiva dell'opera</h3>
+            <p><span>Titolo:</span> Scenes from The Story of Nastagio degli Onesti (Ciclo di quattro pannelli) <sup><a href="https://www.museodelprado.es/en/the-collection/art-work/scenes-from-the-story-of-nastagio-degli-onesti/6620fb36-c65d-497b-8283-92cef5bc08de" target="_blank" title="Visualizza i pannelli I, II, III al Museo del Prado">Museo del Prado</a></sup></p>
+            <p><span>Autore:</span> Sandro Botticelli (con aiuti di bottega) <sup>(<a href="https://www.wikidata.org/wiki/Q5669" target="_blank" title="Pagina Wikidata di Botticelli">Wikidata</a> / <a href="https://viaf.org/viaf/179145970098632250973" target="_blank">VIAF</a>)</sup></p>
+            <p><span>Autore dell'opera letteraria:</span> Giovanni Boccaccio <sup>(<a href="https://viaf.org/viaf/64002165/" target="_blank">VIAF</a>)</sup></p>
+            <p><span>Luogo di creazione:</span> Firenze, Italia <sup>(<a href="https://www.geonames.org/3176959/firenze.html" target="_blank">GeoNames</a>)</sup></p>
+            <p><span>Data di realizzazione:</span> 1483 <sup><a href="https://timeline.knightlab.com/" target="_blank" title="Visualizza sulla linea del tempo">Visualizza sulla linea del tempo</a></sup></p>
+            <p><span>Tipologia:</span> Ciclo pittorico </p>
+            <p><span>Tecnica:</span> Tempera su tavola </p>
+            <p><span>Dimensioni:</span> 83×138 cm (ciascun pannello)</p>
+            <p><span>Conservazione attuale:</span> Museo Nacional del Prado, Madrid (tavole I-III); Collezione privata, Palazzo Pucci, Firenze (tavola IV) <sup>(<a href="http://viaf.org/viaf/147181932" target="_blank">VIAF: Museo Nacional del Prado</a> / <a href="http://viaf.org/viaf/244327795" target="_blank">VIAF: Palazzo Pucci</a>) <a href="https://leafletjs.com/index.html" target="_blank" title="Visualizza sulla mappa dei luoghi">Visualizza sulla mappa dei luoghi</a></sup></p>
+            <p><span>Soggetti e Classificazione:</span></p>
+            <ul> <!--(Unordered List): Rappresenta la lista non ordinata (l'elenco puntato vero e proprio). Serve da contenitore generale per tutti gli elementi dell'elenco.-->
+              <li>Novella di riferimento: Decameron, Giornata V, Novella 8</li>
+              <li>Nastagio degli Onesti</li> <!--(List Item): Rappresenta il singolo elemento della lista.-->
+              <li>Pittura rinascimentale <sup>(Soggetti BNCF: <a href="https://thes.bncf.firenze.sbn.it/termine.php?id=27395" target="_blank">Pittura</a> | <a href="https://thes.bncf.firenze.sbn.it/termine.php?id=24303" target="_blank">Rinascimento</a>)</sup></li>
+            </ul>
+            <p><span>Parole chiave:</span> <a href="#" title="Visualizza opere collegate">Caccia infernale</a>, <a href="#" title="Visualizza opere collegate">Amore crudele</a>, <a href="#" title="Visualizza opere collegate">Pineta di Ravenna</a>, <a href="#" title="Visualizza opere collegate">Banchetto</a>, <a href="#" title="Visualizza opere collegate">Matrimonio</a>, <a href="#" title="Visualizza opere collegate">Rinascimento</a></p>
+          </div>
+
+          <!-- Descrizione dell'opera -->
+          <div class="bg-gray metadata pd-12">
+            <h3 class="dc.description">Descrizione</h3>
+            Il ciclo raffigura la celebre novella di <strong>Nastagio degli Onesti</strong> tratta dalla quinta giornata del <em>Decameron</em> di Boccaccio. Nastagio, nobile ravennate rifiutato dalla donna amata, si ritira addolorato nella pineta di Classe dove assiste a una visione terrificante: una donna nuda inseguita e punita da un cavaliere e dai suoi cani per la sua crudeltà in vita. Comprendendo la lezione esemplare della <strong>caccia infernale</strong>, Nastagio organizza un banchetto nello stesso luogo invitando la sua amata, la quale, spaventata dalla visione, acconsente infine a sposarlo. Il ciclo fu commissionato da Lorenzo il Magnifico per il matrimonio di Giannozzo Pucci e Lucrezia Bini nel 1483.
+          </div>
+        </div>
+      </div>
+
+      <!-- right column (aside) -->
+      <div class="rightcolumn">
+        <aside class="sidebar">
+          <!-- Aside: Item Correlato (Fonte Letteraria) -->
+          <div class="sidebar-box novella-card">
+              <h3>Fonte Letteraria</h3>
+              <img src="img/brigata.png" alt="Decameron" />
+              <h4 class="card-title fw-bold"><i>Decameron</i>: Giornata V, Novella 8</h4>
+              <p class="card-text small text-muted">
+                La novella di Giovanni Boccaccio che ha ispirato il ciclo pittorico commissionato al Botticelli per le nozze Pucci-Bini.
+              </p>
+              <a href="testo-novella_TEI.xml" class="btn bg-pink" title="Scarica il testo della novella in TEI" target="_blank">Vai alla novella (Testo TEI)</a>
+          </div>
+          <!-- Box Autore -->
+          <div class="sidebar-box author-card">
+            <h3>L'Autore</h3>
+            <img src="img/Botticelli.jpg" alt="Sandro Botticelli" />
+            <h4 class="card-title fw-bold">Sandro Botticelli</h4>
+            <p><b>(Firenze, 1445 – 1510)</b></p>
+            <p>Pittore simbolo del Rinascimento fiorentino, celebre per la <em>Nascita di Venere</em> e la <em>Primavera</em>. Realizzò la serie di Nastagio per la famiglia Pucci.</p>
+            <a href="https://it.wikipedia.org/wiki/Sandro_Botticelli" target="_blank" class="btn bg-blue" title="Scheda dell'autore su Wikipedia">Scheda Autore</a>
+          </div>
+
+          <!-- Box Vedi Anche -->
+          <div class="sidebar-box">
+            <h3>Vedi anche...</h3>
+            <ul class="related-items-list">
+              <li>
+                <a href="#">Kent, Rockwell - Caccia Infernale</a>
+                <span>Illustrazione per il Decameron (1949)</span>
+              </li>
+              <li>
+                <a href="#">Anonimo Maestro - Storie di Griselda</a>
+                <span>Ciclo figurativo su novella del Decameron (1494)</span>
+              </li>
+              <li>
+                <a href="#">Willem Van Mieris - Cimone e Efigenia</a>
+                <span>Dipinto ispirato alla Giornata V, Novella 1 (1698)</span>
+              </li>
+              <li>
+                <a href="list-items.html">Tutte le opere della Giornata V</a>
+                <span>Opere legate al tema dell'amore felice dopo peripezie</span>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <p>
+          <a href="#" title="Credits">Credits</a> |
+          <a href="#" title="Licenze">Licenze</a> |
+          <a href="#" title="Piano di progetto">Web Project Plan</a>
+        </p>
+      </div>
+      <div class="copyright">
+        <p>&copy; Copyright (c) 2026 by <em>Benedetta Bettazzi</em>. 
+    Università di Bologna</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

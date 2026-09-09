@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="it">
+<!-- Un documento html ha due elementi dipendenti, un head e un body -->
+<head>
+  <!-- Required meta tags -->
+  <title>La fortuna delle novelle di Boccaccio</title>
+  <meta charset="UTF-8" />
+  <!-- responsivness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- foglio di stile -->
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <!-- libreria di icone -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Metadati Dublin Core (DC) -->
+  <meta name="DC.Title" content="La fortuna delle novelle di Boccaccio">
+  <meta name="DC.Creator" content="Benedetta Bettazzi">
+  <meta name="DC.Subject" content="Giovanni Boccaccio; Decameron; Digital Humanities">
+  <meta name="DC.Description" content="Collezione digitale e catalogo ragionato delle trasposizioni artistiche, editoriali e multimediali delle novelle del Decameron di Giovanni Boccaccio.">
+  <meta name="DC.Publisher" content="Università degli Studi di Bologna">
+  <meta name="DC.Date" content="2026">
+  <meta name="DC.Type" content="InteractiveResource">
+  <meta name="DC.Format" content="text/html">
+  <meta name="DC.Identifier" content="http://example.org/boccaccio-novelle">
+  <meta name="DC.Language" content="it">
+  <meta name="DC.Rights" content="Licenza riservata">
+</head>
+<body>
+  <!-- Abbiamo diviso il body in header, nav, section e footer -->
+  <!-- header -->
+  <header style="display: none;">
+   <div class="header">
+   </div>
+ </header>
+ <!-- navigation bar -->
+ <nav>
+  <div class="topnav">
+    <a class="navbar-brand" href="#">La fortuna delle novelle di Boccaccio</a>
+    <a href="#" class="active" title="Link alla home">&#9812;Homepage</a>
+    <a href="#scopri-di-piu" title="Link al progetto">&#9813;Progetto</a>
+    <!--dropdown (tendina) in topnav-->
+    <div class="dropdown">
+      <button class="dropbtn">&#9815;Catalogo <i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="list-items.html">Lista</a>
+        <a href="#">Le novelle</a>
+        <a href="#">Le parole chiave</a>
+        <a href="#">Le tipologie</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">&#9814;Percorsi interattivi <i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="map.html" title="Link alla mappa su Leaflet">La mappa dei luoghi</a>
+        <a href="#" title="Link alla linea del tempo">La linea del tempo</a>
+      </div>
+    </div>
+    <a href="data.html" title="Vai alla pagina dei Dati e Riconciliazione">&#9816;Dati</a>
+    <!--barra di search in alto a destra-->
+    <form class="search-form">
+        <input type="text" placeholder="Search..">
+        <button class="search-button" type="submit">Cerca</button>
+    </form>
+  </div>
+</nav>
+<!-- hero img -->
+<!-- La div che segue ha un titolo di primo livello e un paragrafo -->
+<!-- A Hero Image is a large image with text, often placed at the top of a webpage -->
+<div class="hero-image">
+  <div class="hero-text">
+    <h1>La fortuna delle novelle di Boccaccio nelle arti figurative e nella cultura successive</h1>
+    <p>Un catalogo che mostri come le novelle del <i>Decameron</i> di Boccaccio abbiano influenzato la produzione di dipinti, film, spettacoli teatrali e libri dal 1350 a oggi</p>
+    <a href="#scopri-di-piu" class="btn default" title="Scopri di più">Scopri di più</a>
+  </div>
+</div>
+<!-- 1 column -->
+<section>
+  <div class="row bg-gray" id="scopri-di-piu">
+    <div class="column">
+      <h2>Il progetto</h2>
+      <p>
+        <b>La fortuna delle novelle di Boccaccio nelle arti figurative e nella cultura successive</b> è un progetto nato all'interno del corso magistrale di Digital
+        Humanities e Patrimonio Culturale (<a
+        href="https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/523225"
+        title="Link al corso"
+        target="_blank">/DH</a
+        >) dell'Università di Bologna. Gli obiettivi principali del progetto sono la catalogazione, la metadatazione, la preservazione e la valorizzazione delle principlai opere artistiche e culturali che devono la loro origine e ispirazione alle novelle del <i>Decameron</i> di Boccaccio. In particolare, il progetto intende offrire alcuni percorsi narrativi di esplorazione, dando la possibilità di filtrare le opere per novella di rispettiva influenza, per parole chiave, per luogo di conservazione, per data di creazione e per tipologia. Il risultato è un catalogo che raccoglie più di un centinaio di opere, tra dipinti, film, libri e audiolibri navigabili per periodo.... <a href="#scopri-di-piu">continua a leggere</a>
+      </p>
+    </div>
+  </div>
+</section>
+<!-- 1 column -->
+<section>
+  <div class="row bg-pink">
+    <div class="column">
+      <h2 class="txt-light" id="esplora-la-raccolta">Esplora la raccolta</h2>
+      <!-- accordion -->
+      <button class="accordion btn-esplora"><b>Lista</b> <span class="span-btn-esplora"> (Esplora tutte le opere)</span></button>
+      <div class="panel">
+        <p>
+          Catalogo completo delle opere in lista, con possibilità di filtrare per novella, luogo di conservazione, parole chiave e tipologia di opera (film, libri, opere d'arte...). Clicca sulle opere per scoprire a quale novella fanno riferimento!
+        </p>
+        <a href="list-items.html" class="btn default" title="Vai a tutte le opere">Vai alla lista</a>
+      </div>
+      <button class="accordion btn-esplora"><b>Le novelle</b> <span class="span-btn-esplora"> (Scorri tra le novelle del <i>Decameron</i> e scopri quali opere hanno ispirato)</span></button>
+      <div class="panel">
+        <p>
+          Troverai i testi in TEI delle novelle del <i>Decameron</i>, basate sull'edizione a cura di Vittore Branca, edizione Einaudi 1992. Sotto a ogni novella, con testo scaricabile, l'elenco delle opere che la novella ha ispirato.
+        </p>
+        <a href="#esplora-la-raccolta" class="btn default" title="Vai ai testi delle novelle">Vai ai testi delle novelle</a>
+      </div>
+      <button class="accordion btn-esplora"><b>Le parole chiave</b> <span class="span-btn-esplora">(Scopri i temi principali che legano novelle e opere del catalogo)</span></button>
+      <div class="panel">
+        <p>
+          Cerca tra le parole chiave legate al <i>Decameron</i> (come "amore", "ingegno", "motto", "beffa" e molte altre) ed esplora le opere in base alla tematica di cui trattano.
+        </p>
+        <a href="#esplora-la-raccolta" class="btn default" title="Vai ai temi">Cerca tra le parole chiave</a> 
+      </div>
+      <button class="accordion btn-esplora"><b>Le tipologie</b> <span class="span-btn-esplora">(Naviga tra film, libri e opere artistiche, filtrando per categoria)</span></button>
+      <div class="panel">
+        <p>
+          Non solo dipinti; il <i>Decameron</i> è stato fonte di ispirazione per tantissime opere di vario tipo. Qui abbiamo raccolto la filmografia, l'editoria (compreso un audiolibro) e le opere artistiche, prevalentemente pittoriche, per dare modo di esplorare la varietà e la ricchezza dell'influenza boccacciana.
+        </p>
+        <a href="#esplora-la-raccolta" class="btn default" title="Scopri tutte le tipologie">Scopri tutte le tipologie</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- section catalogo con 2 column cards -->
+<section>
+  <div class="row">
+    <div class="column">
+      <h2 id="percorsi-interattivi">Percorsi interattivi</h2>
+      <p>Esplora il catalogo usando la mappa o la linea del tempo &#128071</p>
+    </div>
+    <div class="leftcolumn">
+      <div class="card">
+        <b>I luoghi</b>
+        <p>Esplora i luoghi dove sono conservate attualmente le opere</p>
+      </div>
+      <a href="map.html" class="btn default" title="Vai alla mappa">Vai alla mappa dei luoghi</a>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <b>Le date</b>
+        <p>Naviga in sequenza cronologica</p>
+      </div>
+      <a href="#percorsi-interattivi" class="btn default" title="Vai alla linea del tempo">Vai alla linea del tempo</a>
+    </div>
+  </div>
+</section>
+<!--1 column-->
+<section>
+  <div class="row bg-pink">
+    <div class="leftcolumn">
+      <h2 class="txt-light text-center" id="comincia">Comincia ad esplorare alcuni capolavori!</h2>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade active">
+          <div class="numbertext">1 / 3</div>
+          <img src="img/opere/Botticelli - Nastagio degli Onesti pt.1.jpg" style="width:100%" class="slide">
+          <div class="text">
+            <p>Botticelli, Sandro - Scenes from the Story of Nastagio degli Onesti</p>
+            <a href="item.html" class="btn default" title="Vedi l'item completo" style="display: inline;">Vedi l'item completo</a>
+          </div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img/opere/The Story of Griselda pt.1.jpg" style="width:100%" class="slide">
+          <div class="text">
+            <p>Anonimo Maestro - Storie di Griselda</p>
+            <a href="#comincia" class="btn default" title="Vai all'opera" style="display: inline;">Vedi l'item completo</a>
+          </div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img/opere/Willem Van Mieris - Cimone e Efigenia.jpg" style="width:100%" class="slide">
+          <div class="text">
+            <p>Willem Van Mieris - Cimone e Efigenia</p>
+            <a href="#comincia" class="btn default" title="Vai all'opera" style="display: inline;">Vedi l'item completo</a>
+          </div>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- The dots/circles -->
+        <br>
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <h2 class="txt-light text-center">Scopri di più sull'autore del <i>Decameron</i></h2>
+      <!-- autore -->
+      <div class="container author">
+        <img src="img/autore.jpg" class="image author">
+        <div class="overlay">Giovanni Boccaccio (1313-1375)</div>
+        <a href="https://it.wikipedia.org/wiki/Giovanni_Boccaccio" class="btn default btn-author" title="Scopri di più su Boccaccio">Scopri di più</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer -->
+<footer>
+  <div class="footer">
+    <p><a href="#" title="Credits">Credits</a> | <a href="#" title="Licenze">Licenze</a> | <a href="#" title="Piano di progetto">Web Project Plan</a> </p>
+  </div>
+  <div class="copyright">
+    <p>&copy; Copyright (c) 2026 by <em>Benedetta Bettazzi</em>. 
+    Università di Bologna</p>
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2845.9021866577236!2d11.34882917649802!3d44.496670997470844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd4bb9919533f%3A0x28bbdd19297b033a!2sVia%20Zamboni%2C%2034%2C%2040126%20Bologna%20BO!5e0!3m2!1sit!2sit!4v1778673838125!5m2!1sit!2sit" width="300" height="175" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+  </div>
+</footer>
+<!-- script -->
+<script type="text/javascript" src="js/main.js"></script>
+<!-- accordion -->
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+</script>
+</body>
+</html>

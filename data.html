@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dati | La fortuna delle novelle di Boccaccio</title>
+
+  <!-- CSS Principale + stili specifici della pagina Dati -->
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/style-data.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="page-data">
+
+  <!-- header -->
+  <header>
+    <div class="header">
+      <img src="img/layout/Decamerone.jpg" class="center" alt="Decamerone"/>
+    </div>
+  </header>
+
+  <!-- navigation bar -->
+  <nav>
+    <div class="topnav">
+      <a class="navbar-brand" href="#">La fortuna delle novelle di Boccaccio</a>
+      <a href="index.html" title="Link alla home">&#9812;Homepage</a>
+      <a href="index.html#scopri-di-piu" title="Link al progetto">&#9813;Progetto</a>
+      <!-- dropdown catalogo -->
+      <div class="dropdown">
+        <button class="dropbtn">&#9815;Catalogo <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="list-items.html">Lista</a>
+          <a href="#">Le novelle</a>
+          <a href="#">Le parole chiave</a>
+          <a href="#">Le tipologie</a>
+        </div>
+      </div>
+      <!-- dropdown percorsi interattivi -->
+      <div class="dropdown">
+        <button class="dropbtn">&#9814;Percorsi interattivi <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="map.html" title="Link alla mappa su Leaflet">La mappa dei luoghi</a>
+          <a href="#" title="Link alla linea del tempo">La linea del tempo</a>
+        </div>
+      </div>
+      <a href="data.html" class="active" title="Vai alla pagina dei Dati e Riconciliazione">&#9816;Dati</a>
+      <!-- barra di search in alto a destra -->
+      <form class="search-form">
+          <input type="text" placeholder="Search..">
+          <button class="search-button" type="submit">Cerca</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- breadcrumbs: barra a piena larghezza, come in map.html -->
+  <div class="breadcrumb-bar">
+    <ul class="breadcrumb" id="breadcrumb-list">
+      <!-- Generato automaticamente da main.js -->
+    </ul>
+  </div>
+
+  <!-- Contenuto pagina Dati -->
+  <div class="data-container">
+    <h1>Dati e Riconciliazione</h1>
+    <p>Tabella dei metadati e riconciliazione con i record di autorità (Linked Open Data) per gli item della collezione.</p>
+
+    <div class="table-container">
+      <table>
+        <thead><!--(Table Head). Serve a raggruppare l'intestazione di una tabella-->
+          <tr><!--Table Row, rappresenta una riga della tabella-->
+            <th>ID Item</th><!--"Table Data" (Dato di Tabella), definisce una singola cella standard-->
+            <th>Titolo dell'Item</th>
+            <th>Autore / Artista</th>
+            <th>Data</th>
+            <th>Tipologia (Getty AAT)</th>
+            <th>Novella / Riferimento</th>
+            <th>Riconciliazione Autorità (VIAF / Wikidata)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>ITEM-01</strong></td>
+            <td><a href="item.html">Scenes from The Story of Nastagio degli Onesti</a></td>
+            <td>Sandro Botticelli</td>
+            <td>1483</td>
+            <td><a href="http://vocab.getty.edu/page/aat/300033618" target="_blank">Pittura su tavola</a></td>
+            <td>Decameron, V, 8</td>
+            <td>
+              <a href="https://viaf.org/viaf/179145971392032252190/" target="_blank" class="badge">VIAF: Botticelli</a>
+              <a href="https://www.wikidata.org/wiki/Q1131019" target="_blank" class="badge">WD: Opera</a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>ITEM-02</strong></td>
+            <td><a href="list-items.html">The Decameron of Giovanni Boccaccio, illustrated by Rockwell Kent</a></td>
+            <td>Rockwell Kent / Garden City Books</td>
+            <td>1949</td>
+            <td><a href="http://vocab.getty.edu/page/aat/300028043" target="_blank">Edizione illustrata</a></td>
+            <td>Decameron (Completo)</td>
+            <td>
+              <a href="https://viaf.org/viaf/64016629" target="_blank" class="badge">VIAF: Kent</a>
+              <a href="https://openlibrary.org/books/OL51012654M/The_Decameron_of_Giovanni_Boccaccio" target="_blank" class="badge" title="Record d'edizione Open Library (Garden City Pub. Co., 1949)">OL: Edizione 1949</a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>ITEM-03</strong></td>
+            <td><a href="list-items.html">Illustrazione della caccia infernale, in The Decameron of Giovanni Boccaccio</a></td>
+            <td>Rockwell Kent</td>
+            <td>1949</td>
+            <td><a href="http://vocab.getty.edu/page/aat/300015578" target="_blank">Illustrazione</a></td>
+            <td>Decameron, V, 8</td>
+            <td>
+              <a href="https://viaf.org/viaf/64016629" target="_blank" class="badge">VIAF: Kent</a>
+              <a href="https://openlibrary.org/books/OL51012654M/The_Decameron_of_Giovanni_Boccaccio" target="_blank" class="badge" title="Record d'edizione Open Library (Garden City Pub. Co., 1949)">OL: Edizione 1949</a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>ITEM-04</strong></td>
+            <td><a href="list-items.html">Il Decameron - Un film di Pier Paolo Pasolini</a></td>
+            <td>Pier Paolo Pasolini</td>
+            <td>1971</td>
+            <td><a href="http://vocab.getty.edu/page/aat/300136900" target="_blank">Film</a></td>
+            <td>Decameron (Adattamento)</td>
+            <td>
+              <a href="https://viaf.org/viaf/54152321/" target="_blank" class="badge">VIAF: Pasolini</a>
+              <a href="https://www.wikidata.org/wiki/Q720159" target="_blank" class="badge">WD: Film</a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>ITEM-05</strong></td>
+            <td><a href="list-items.html">Decamerone</a></td>
+            <td>Aldo Busi (Traduzione/Riscrittura)</td>
+            <td>1991</td>
+            <td><a href="http://vocab.getty.edu/page/aat/300028051" target="_blank">Edizione a stampa</a></td>
+            <td>Decameron (Completo)</td>
+            <td>
+              <a href="https://viaf.org/viaf/51711200/" target="_blank" class="badge">VIAF: Busi</a>
+              <a href="https://www.wikidata.org/wiki/Q1232810" target="_blank" class="badge">WD: Busi</a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>ITEM-06</strong></td>
+            <td><a href="list-items.html">Storie di Griselda</a></td>
+            <td>Maestro di Griselda (Anonimo)</td>
+            <td>1494 ca.</td>
+            <td><a href="http://vocab.getty.edu/page/aat/300033618" target="_blank">Pittura su tavola</a></td>
+            <td>Decameron, X, 10</td>
+            <td>
+              <a href="https://viaf.org/viaf/95836371" target="_blank" class="badge">VIAF: Maestro</a>
+              <a href="https://www.wikidata.org/wiki/Q131719743" target="_blank" class="badge">WD: Opera</a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>ITEM-07</strong></td>
+            <td><a href="list-items.html">Cimone e Efigenia</a></td>
+            <td>Willem van Mieris</td>
+            <td>1698</td>
+            <td><a href="http://vocab.getty.edu/page/aat/300033618" target="_blank">Dipinto ad olio</a></td>
+            <td>Decameron, V, 1</td>
+            <td>
+              <a href="https://viaf.org/viaf/44570885/" target="_blank" class="badge">VIAF: Mieris</a>
+              <a href="https://www.wikidata.org/wiki/Q107557318" target="_blank" class="badge">WD: Opera</a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>ITEM-08</strong></td>
+            <td><a href="list-items.html">Isabella and the pot of Basil</a></td>
+            <td>William Holman Hunt</td>
+            <td>1867-1868</td>
+            <td><a href="http://vocab.getty.edu/page/aat/300033618" target="_blank">Dipinto ad olio</a></td>
+            <td>Decameron, IV, 5</td>
+            <td>
+              <a href="https://viaf.org/viaf/61618437/" target="_blank" class="badge">VIAF: Hunt</a>
+              <a href="https://www.wikidata.org/wiki/Q4198276" target="_blank" class="badge">WD: Opera</a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>ITEM-09</strong></td>
+            <td><a href="list-items.html">Ghismunda</a></td>
+            <td>Bernardino Mei</td>
+            <td>1650 ca.</td>
+            <td><a href="http://vocab.getty.edu/page/aat/300033618" target="_blank">Dipinto ad olio</a></td>
+            <td>Decameron, IV, 1</td>
+            <td>
+              <a href="https://viaf.org/viaf/30472483/" target="_blank" class="badge">VIAF: Mei</a>
+              <a href="https://www.wikidata.org/wiki/Q43306031" target="_blank" class="badge">WD: Novella IV,1</a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>ITEM-10</strong></td>
+            <td><a href="list-items.html">Federigo degli Alberighi</a></td>
+            <td>Mirko Basaldella</td>
+            <td>1967 ca.</td>
+            <td><a href="http://vocab.getty.edu/page/aat/300033973" target="_blank">Disegno</a></td>
+            <td>Decameron, V, 9</td>
+            <td>
+              <a href="https://viaf.org/viaf/69739433/" target="_blank" class="badge">VIAF: Basaldella</a>
+              <a href="https://www.wikidata.org/wiki/Q43306049" target="_blank" class="badge">WD: Novella V,9</a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>ITEM-11</strong></td>
+            <td><a href="list-items.html">Decameron. Novelle scelte (audiolibro)</a></td>
+            <td>Claudio Carini (voce narrante)</td>
+            <td>2008</td>
+            <td><a href="http://id.loc.gov/authorities/genreForms/gf2011026063" target="_blank">Audiobooks (LCGFT)</a></td>
+            <td>Decameron, V, 8 (fra le 10 novelle incluse)</td>
+            <td>
+              <a href="https://viaf.org/viaf/64002165/" target="_blank" class="badge">VIAF: Boccaccio</a>
+              <a href="https://www.wikidata.org/wiki/Q3679972" target="_blank" class="badge">WD: Claudio Carini</a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>ITEM-12</strong></td>
+            <td><a href="list-items.html">Federigo degli Alberighi invita a pranzo monna Giovanna (miniatura)</a></td>
+            <td>Ludovico Ceffini (copista/miniatore)</td>
+            <td>1427 ca.</td>
+            <td><a href="http://vocab.getty.edu/page/aat/300265483" target="_blank">Manoscritto miniato</a></td>
+            <td>Decameron, V, 9</td>
+            <td>
+              <a href="https://viaf.org/viaf/64002165/" target="_blank" class="badge">VIAF: Boccaccio</a>
+              <a href="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc9591h" target="_blank" class="badge">BnF: ms. Italien 63</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="legenda">
+      <strong>VIAF</strong> = Virtual International Authority File · <strong>WD</strong> = Wikidata · <strong>OL</strong> = Open Library ·  <strong>BnF</strong> = Bibliothèque nationale de France · <strong>Getty AAT</strong> = Art &amp; Architecture Thesaurus · <strong>LCGFT</strong> = Library of Congress Genre/Form Terms.
+      Clicca sul titolo di un item per raggiungere la relativa scheda nel catalogo.
+    </p>
+     <!--
+      Nota di riconciliazione: per ITEM-05 e ITEM-11 non è stato trovato un
+      record distinto e verificabile con certezza (edizione Busi/Rizzoli
+      1990-91 disponibile in più varianti; audiolibro Recitar Leggendo privo
+      di un identificativo pubblico rintracciato). Le due colonne restano
+      quindi entrambe di tipo "persona" (VIAF + WD) in attesa di un ISBN/EAN
+      certo da riconciliare.
+    -->
+    <div class="export-buttons">
+      <a class="btn-export" href="data.csv" download="decameron.csv">&#11015; Scarica CSV</a>
+      <a class="btn-export" href="data.json" download="decameron.json">&#11015; Scarica JSON</a>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer">
+      <p>
+        <a href="#" title="Credits">Credits</a> |
+        <a href="#" title="Licenze">Licenze</a> |
+        <a href="#" title="Piano di progetto">Web Project Plan</a>
+      </p>
+    </div>
+    <div class="copyright">
+      <p>&copy; Copyright (c) 2026 by <em>Benedetta Bettazzi</em>.
+      Università di Bologna</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace">
+	<dc:title>Scenes from The Story of Nastagio degli Onesti</dc:title>
+	<dc:identifier>ITEM-01</dc:identifier>
+	<dc:creator>Botticelli, Sandro</dc:creator>
+	<dcterms:creator>https://viaf.org/viaf/179145970098632250973</dcterms:creator>
+	<dc:contributor>Boccaccio, Giovanni</dc:contributor> <!-- autore dell'opera letteraria d'origine -->
+	<dcterms:contributor>https://viaf.org/viaf/64002165/</dcterms:contributor>
+	<!-- soggetto e vocabolari controllati (BNCF) -->
+	<dc:subject>Decameron; Giornata V, Novella 8; Nastagio degli Onesti; Pittura rinascimentale</dc:subject>
+	<dcterms:subject>https://thes.bncf.firenze.sbn.it/termine.php?id=27395</dcterms:subject>
+	<dcterms:subject>https://thes.bncf.firenze.sbn.it/termine.php?id=24303</dcterms:subject>
+	<dc:description xml:lang="it"> Il ciclo raffigura la celebre novella di Nastagio degli Onesti tratta dalla quinta giornata del Decameron di Boccaccio. Nastagio, nobile ravennate rifiutato dalla donna amata, si ritira addolorato nella pineta di Classe dove assiste a una visione terrificante: una donna nuda inseguita e punita da un cavaliere e dai suoi cani per la sua crudeltà in vita. Comprendendo la lezione esemplare della caccia infernale, Nastagio organizza un banchetto nello stesso luogo invitando la sua amata, la quale, spaventata dalla visione, acconsente infine a sposarlo. Il ciclo fu commissionato da Lorenzo il Magnifico per il matrimonio di Giannozzo Pucci e Lucrezia Bini nel 1483.</dc:description>
+	<!-- data e luogo di creazione -->
+	<dc:date>1483</dc:date>
+	<dcterms:created>1483</dcterms:created>
+	<dcterms:spatial>Creazione: Firenze, Italia</dcterms:spatial>
+	<dcterms:spatial>https://www.geonames.org/3176959/firenze.html</dcterms:spatial>
+	<!-- conservazione attuale -->
+	<dc:publisher>Museo Nacional del Prado (Pannelli I-III); Collezione privata (Pannello IV)</dc:publisher>
+	<dc:coverage>Madrid, Spagna (Pannelli I-III); Collezione privata (Pannello IV)</dc:coverage>
+	<dcterms:spatial>https://www.geonames.org/3117732/comunidad-de-madrid.html</dcterms:spatial>
+	<!-- formato digitale e analogico -->
+	<dc:type>Image</dc:type> <!--indica che l'item digitale è un'immagine statica-->
+	<dcterms:type>StillImage</dcterms:type> <!-- Indica cosa è l'oggetto a livello concettuale. Nel DCMI Type Vocabulary si usa per dipinti, fotografie, disegni, stampe --> 
+	<dc:format>image/jpeg</dc:format> <!-- indica il formato del file digitale -->
+	<dcterms:medium>Tempera su tavola</dcterms:medium> <!--indica di cosa è fatto l'item -->
+	<dc:source>Scenes from The Story of Nastagio degli Onesti - Museo Nacional del Prado</dc:source>
+	<dc:relation>Decameron, Giornata V, Novella 8</dc:relation>
+	<dc:rights>Copyright © Museo Nacional del Prado</dc:rights>
+	<dcterms:provenance>Realizzato a Firenze nel 1483 per le nozze Pucci-Bini. Pannelli I, II e III conservati al Museo del Prado (Madrid); IV pannello conservato in collezione privata.</dcterms:provenance>
+</metadata>

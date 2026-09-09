@@ -1,0 +1,280 @@
+{
+  "collezione": "La fortuna delle novelle di Boccaccio",
+  "descrizione": "Catalogo e riconciliazione LOD delle trasposizioni artistiche, editoriali e multimediali ispirate alle novelle del Decameron di Giovanni Boccaccio.",
+  "items": [
+    {
+      "id": "ITEM-01",
+      "titolo": "Scenes from The Story of Nastagio degli Onesti",
+      "autore": "Sandro Botticelli",
+      "data": "1483",
+      "tipologia": {
+        "label": "Pittura su tavola",
+        "getty_aat": "http://vocab.getty.edu/page/aat/300033618"
+      },
+      "novella": "Decameron, V, 8",
+      "luogo_conservazione": {
+        "istituzione": "Museo Nacional del Prado",
+        "citta": "Madrid, Spagna",
+        "lat": 40.4138,
+        "lng": -3.6921,
+        "note": "Pannelli I-III; il pannello IV è in collezione privata, Palazzo Pucci, Firenze"
+      },
+      "riconciliazione": [
+        { "fonte": "VIAF", "etichetta": "VIAF: Botticelli", "url": "https://viaf.org/viaf/179145971392032252190/" },
+        { "fonte": "Wikidata", "etichetta": "WD: Opera", "url": "https://www.wikidata.org/wiki/Q1131019" }
+      ],
+      "scheda_locale": "item.html"
+    },
+    {
+      "id": "ITEM-02",
+      "titolo": "The Decameron of Giovanni Boccaccio, illustrated by Rockwell Kent",
+      "autore": "Rockwell Kent / Garden City Books",
+      "data": "1949",
+      "tipologia": {
+        "label": "Edizione illustrata",
+        "getty_aat": "http://vocab.getty.edu/page/aat/300028043"
+      },
+      "novella": "Decameron (Completo)",
+      "luogo_conservazione": {
+        "istituzione": "Garden City Publishing",
+        "citta": "Garden City (New York), USA",
+        "lat": 40.7268,
+        "lng": -73.6343,
+        "note": "Luogo di edizione (opera a stampa, non un esemplare unico conservato)"
+      },
+      "riconciliazione": [
+        { "fonte": "VIAF", "etichetta": "VIAF: Kent", "url": "https://viaf.org/viaf/64016629" },
+        { "fonte": "Open Library", "etichetta": "OL: Edizione 1949", "url": "https://openlibrary.org/books/OL51012654M/The_Decameron_of_Giovanni_Boccaccio" }
+      ],
+      "scheda_locale": "list-items.html"
+    },
+    {
+      "id": "ITEM-03",
+      "titolo": "Illustrazione della caccia infernale, in The Decameron of Giovanni Boccaccio",
+      "autore": "Rockwell Kent",
+      "data": "1949",
+      "tipologia": {
+        "label": "Illustrazione",
+        "getty_aat": "http://vocab.getty.edu/page/aat/300015578"
+      },
+      "novella": "Decameron, V, 8",
+      "luogo_conservazione": {
+        "istituzione": "Garden City Publishing",
+        "citta": "Garden City (New York), USA",
+        "lat": 40.7268,
+        "lng": -73.6343,
+        "note": "Luogo di edizione (opera a stampa, non un esemplare unico conservato)"
+      },
+      "riconciliazione": [
+        { "fonte": "VIAF", "etichetta": "VIAF: Kent", "url": "https://viaf.org/viaf/64016629" },
+        { "fonte": "Open Library", "etichetta": "OL: Edizione 1949", "url": "https://openlibrary.org/books/OL51012654M/The_Decameron_of_Giovanni_Boccaccio" }
+      ],
+      "scheda_locale": "list-items.html"
+    },
+    {
+      "id": "ITEM-04",
+      "titolo": "Il Decameron - Un film di Pier Paolo Pasolini",
+      "autore": "Pier Paolo Pasolini",
+      "data": "1971",
+      "tipologia": {
+        "label": "Film",
+        "getty_aat": "http://vocab.getty.edu/page/aat/300136900"
+      },
+      "novella": "Decameron (Adattamento)",
+      "luogo_conservazione": {
+        "istituzione": "Cinecittà",
+        "citta": "Roma, Italia",
+        "lat": 41.8558,
+        "lng": 12.5680,
+        "note": "Luogo di produzione cinematografica"
+      },
+      "riconciliazione": [
+        { "fonte": "VIAF", "etichetta": "VIAF: Pasolini", "url": "https://viaf.org/viaf/54152321/" },
+        { "fonte": "Wikidata", "etichetta": "WD: Film", "url": "https://www.wikidata.org/wiki/Q720159" }
+      ],
+      "scheda_locale": "list-items.html"
+    },
+    {
+      "id": "ITEM-05",
+      "titolo": "Decamerone",
+      "autore": "Aldo Busi (Traduzione/Riscrittura)",
+      "data": "1991",
+      "tipologia": {
+        "label": "Edizione a stampa",
+        "getty_aat": "http://vocab.getty.edu/page/aat/300028051"
+      },
+      "novella": "Decameron (Completo)",
+      "luogo_conservazione": {
+        "istituzione": "BUR Rizzoli",
+        "citta": "Milano, Italia",
+        "lat": 45.4642,
+        "lng": 9.1900,
+        "note": "Luogo di edizione (opera a stampa)"
+      },
+      "riconciliazione": [
+        { "fonte": "VIAF", "etichetta": "VIAF: Busi", "url": "https://viaf.org/viaf/51711200/" },
+        { "fonte": "Wikidata", "etichetta": "WD: Busi", "url": "https://www.wikidata.org/wiki/Q1232810" }
+      ],
+      "nota_riconciliazione": "Non è stato trovato un record distinto e verificabile con certezza (edizione Busi/Rizzoli 1990-91 disponibile in più varianti); la riconciliazione resta di tipo \"persona\" (VIAF + WD) in attesa di un ISBN/EAN certo.",
+      "scheda_locale": "list-items.html"
+    },
+    {
+      "id": "ITEM-06",
+      "titolo": "Storie di Griselda",
+      "autore": "Maestro di Griselda (Anonimo)",
+      "data": "1494 ca.",
+      "tipologia": {
+        "label": "Pittura su tavola",
+        "getty_aat": "http://vocab.getty.edu/page/aat/300033618"
+      },
+      "novella": "Decameron, X, 10",
+      "luogo_conservazione": {
+        "istituzione": "National Gallery",
+        "citta": "Londra, Regno Unito",
+        "lat": 51.5086,
+        "lng": -0.1283
+      },
+      "riconciliazione": [
+        { "fonte": "VIAF", "etichetta": "VIAF: Maestro", "url": "https://viaf.org/viaf/95836371" },
+        { "fonte": "Wikidata", "etichetta": "WD: Opera", "url": "https://www.wikidata.org/wiki/Q131719743" }
+      ],
+      "scheda_locale": "list-items.html"
+    },
+    {
+      "id": "ITEM-07",
+      "titolo": "Cimone e Efigenia",
+      "autore": "Willem van Mieris",
+      "data": "1698",
+      "tipologia": {
+        "label": "Dipinto ad olio",
+        "getty_aat": "http://vocab.getty.edu/page/aat/300033618"
+      },
+      "novella": "Decameron, V, 1",
+      "luogo_conservazione": {
+        "istituzione": "Museo Poldi Pezzoli",
+        "citta": "Milano, Italia",
+        "lat": 45.4719,
+        "lng": 9.1943
+      },
+      "riconciliazione": [
+        { "fonte": "VIAF", "etichetta": "VIAF: Mieris", "url": "https://viaf.org/viaf/44570885/" },
+        { "fonte": "Wikidata", "etichetta": "WD: Opera", "url": "https://www.wikidata.org/wiki/Q107557318" }
+      ],
+      "scheda_locale": "list-items.html"
+    },
+    {
+      "id": "ITEM-08",
+      "titolo": "Isabella and the pot of Basil",
+      "autore": "William Holman Hunt",
+      "data": "1867-1868",
+      "tipologia": {
+        "label": "Dipinto ad olio",
+        "getty_aat": "http://vocab.getty.edu/page/aat/300033618"
+      },
+      "novella": "Decameron, IV, 5",
+      "luogo_conservazione": {
+        "istituzione": "Laing Art Gallery",
+        "citta": "Newcastle upon Tyne, Regno Unito",
+        "lat": 54.9738,
+        "lng": -1.6131
+      },
+      "riconciliazione": [
+        { "fonte": "VIAF", "etichetta": "VIAF: Hunt", "url": "https://viaf.org/viaf/61618437/" },
+        { "fonte": "Wikidata", "etichetta": "WD: Opera", "url": "https://www.wikidata.org/wiki/Q4198276" }
+      ],
+      "scheda_locale": "list-items.html"
+    },
+    {
+      "id": "ITEM-09",
+      "titolo": "Ghismunda",
+      "autore": "Bernardino Mei",
+      "data": "1650 ca.",
+      "tipologia": {
+        "label": "Dipinto ad olio",
+        "getty_aat": "http://vocab.getty.edu/page/aat/300033618"
+      },
+      "novella": "Decameron, IV, 1",
+      "luogo_conservazione": {
+        "istituzione": "Pinacoteca Nazionale di Siena",
+        "citta": "Siena, Italia",
+        "lat": 43.3172,
+        "lng": 11.3308
+      },
+      "riconciliazione": [
+        { "fonte": "VIAF", "etichetta": "VIAF: Mei", "url": "https://viaf.org/viaf/30472483/" },
+        { "fonte": "Wikidata", "etichetta": "WD: Novella IV,1", "url": "https://www.wikidata.org/wiki/Q43306031" }
+      ],
+      "scheda_locale": "list-items.html"
+    },
+    {
+      "id": "ITEM-10",
+      "titolo": "Federigo degli Alberighi",
+      "autore": "Mirko Basaldella",
+      "data": "1967 ca.",
+      "tipologia": {
+        "label": "Disegno",
+        "getty_aat": "http://vocab.getty.edu/page/aat/300033973"
+      },
+      "novella": "Decameron, V, 9",
+      "luogo_conservazione": {
+        "istituzione": "Certaldo",
+        "citta": "Certaldo (FI), Italia",
+        "lat": 43.5486,
+        "lng": 11.0433,
+        "note": "Città natale di Giovanni Boccaccio"
+      },
+      "riconciliazione": [
+        { "fonte": "VIAF", "etichetta": "VIAF: Basaldella", "url": "https://viaf.org/viaf/69739433/" },
+        { "fonte": "Wikidata", "etichetta": "WD: Novella V,9", "url": "https://www.wikidata.org/wiki/Q43306049" }
+      ],
+      "scheda_locale": "list-items.html"
+    },
+    {
+      "id": "ITEM-11",
+      "titolo": "Decameron. Novelle scelte (audiolibro)",
+      "autore": "Claudio Carini (voce narrante)",
+      "data": "2008",
+      "tipologia": {
+        "label": "Audiobooks (LCGFT)",
+        "getty_aat": "http://id.loc.gov/authorities/genreForms/gf2011026063"
+      },
+      "novella": "Decameron, V, 8 (fra le 10 novelle incluse)",
+      "luogo_conservazione": {
+        "istituzione": "Editore Recitar Leggendo Audiolibri",
+        "citta": "Perugia, Italia",
+        "lat": 43.1122,
+        "lng": 12.3888,
+        "note": "Luogo di edizione (opera sonora, non un esemplare unico conservato)"
+      },
+      "riconciliazione": [
+        { "fonte": "VIAF", "etichetta": "VIAF: Boccaccio", "url": "https://viaf.org/viaf/64002165/" },
+        { "fonte": "Wikidata", "etichetta": "WD: Claudio Carini", "url": "https://www.wikidata.org/wiki/Q3679972" }
+      ],
+      "nota_riconciliazione": "Non è stato trovato un record distinto e verificabile con certezza (audiolibro Recitar Leggendo privo di un identificativo pubblico rintracciato); la riconciliazione resta di tipo \"persona\" (VIAF + WD) in attesa di un ISBN/EAN certo.",
+      "scheda_locale": "list-items.html"
+    },
+    {
+      "id": "ITEM-12",
+      "titolo": "Federigo degli Alberighi invita a pranzo monna Giovanna (miniatura)",
+      "autore": "Ludovico Ceffini (copista/miniatore)",
+      "data": "1427 ca.",
+      "tipologia": {
+        "label": "Manoscritto miniato",
+        "getty_aat": "http://vocab.getty.edu/page/aat/300265483"
+      },
+      "novella": "Decameron, V, 9",
+      "luogo_conservazione": {
+        "istituzione": "Bibliothèque nationale de France",
+        "citta": "Parigi, Francia",
+        "lat": 48.8676,
+        "lng": 2.3389,
+        "note": "Ms. Italien 63, f. 188v — Département des Manuscrits"
+      },
+      "riconciliazione": [
+        { "fonte": "VIAF", "etichetta": "VIAF: Boccaccio", "url": "https://viaf.org/viaf/64002165/" },
+        { "fonte": "BnF", "etichetta": "BnF: ms. Italien 63", "url": "https://archivesetmanuscrits.bnf.fr/ark:/12148/cc9591h" }
+      ],
+      "scheda_locale": "list-items.html"
+    }
+  ]
+}

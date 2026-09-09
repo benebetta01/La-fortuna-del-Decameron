@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La mappa dei luoghi| La fortuna delle novelle di Boccaccio</title>
+
+  <!-- CSS Principale e Leaflet -->
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/style-map.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- FontAwesome per le frecce del menu (fa-caret-down) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="page-map">
+
+  <!-- header -->
+  <header>
+    <div class="header">
+      <img src="img/layout/Decamerone.jpg" class="center" alt="Decamerone"/>
+    </div>
+  </header>
+
+  <!-- navigation bar -->
+  <nav>
+    <div class="topnav">
+      <a class="navbar-brand" href="#">La fortuna delle novelle di Boccaccio</a>
+      <a href="index.html" title="Link alla home">&#9812;Homepage</a>
+      <a href="index.html#scopri-di-piu" title="Link al progetto">&#9813;Progetto</a>
+      <!-- dropdown catalogo -->
+      <div class="dropdown">
+        <button class="dropbtn">&#9815;Catalogo <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="list-items.html">Lista</a>
+          <a href="#">Le novelle</a>
+          <a href="#">Le parole chiave</a>
+          <a href="#">Le tipologie</a>
+        </div>
+      </div>
+      <!-- dropdown percorsi interattivi -->
+      <div class="dropdown">
+        <button class="dropbtn active">&#9814;Percorsi interattivi <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="map.html" title="Link alla mappa su Leaflet">La mappa dei luoghi</a>
+          <a href="#" title="Link alla linea del tempo">La linea del tempo</a>
+        </div>
+      </div>
+      <a href="data.html" title="Vai alla pagina dei Dati e Riconciliazione" target="_blank">&#9816;Dati</a>
+      <!-- barra di search in alto a destra -->
+      <form class="search-form">
+          <input type="text" placeholder="Search..">
+          <button class="search-button" type="submit">Cerca</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- breadcrumbs: barra a piena larghezza, non più in un .row/.leftcolumn -->
+  <div class="breadcrumb-bar">
+    <ul class="breadcrumb" id="breadcrumb-list">
+      <!-- Generato automaticamente da main.js -->
+    </ul>
+  </div>
+
+  <!-- Contenuto Mappa -->
+  <div class="map-container">
+    <h1>La mappa dei luoghi</h1>
+    <p>Geolocalizzazione dei musei, delle gallerie e degli editori/luoghi di produzione legati alle opere della collezione. Scorri sulla mappa ed esplora!</p>
+
+    <div id="map" class="map"></div>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer">
+      <p>
+        <a href="#" title="Credits">Credits</a> |
+        <a href="#" title="Licenze">Licenze</a> |
+        <a href="#" title="Piano di progetto">Web Project Plan</a>
+      </p>
+    </div>
+    <div class="copyright">
+      <p>&copy; Copyright (c) 2021 by <em>Benedetta Bettazzi</em>.
+      Università di Bologna</p>
+    </div>
+  </footer>
+
+  <!-- Leaflet JS & Script Inizializzazione -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var map = L.map('map').setView([45.0, 10.0], 4);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      // I 12 item del catalogo (coerenti con data.html), con il rispettivo
+      // luogo di conservazione o - per le opere non conservate come esemplare
+      // unico (libri a stampa, film) - il luogo di edizione/produzione (segnalato nel popup)
+      var opere = [
+        {
+          id: "ITEM-01",
+          nome: "Museo Nacional del Prado",
+          citta: "Madrid, Spagna",
+          coords: [40.4138, -3.6921],
+          opera: "Scenes from The Story of Nastagio degli Onesti (Sandro Botticelli, 1483)",
+          note: "Pannelli I-III; il pannello IV è in collezione privata, Palazzo Pucci, Firenze",
+          itemLink: "item.html"
+        },
+        {
+          id: "ITEM-02/03",
+          nome: "Garden City Publishing",
+          citta: "Garden City (New York), USA",
+          coords: [40.7268, -73.6343],
+          opera: "The Decameron of Giovanni Boccaccio, ill. Rockwell Kent (1949)",
+          note: "Luogo di edizione (opera a stampa, non un esemplare unico conservato)",
+          itemLink: "list-items.html"
+        },
+        {
+          id: "ITEM-04",
+          nome: "Cinecittà",
+          citta: "Roma, Italia",
+          coords: [41.8558, 12.5680],
+          opera: "Il Decameron - Un film di Pier Paolo Pasolini (1971)",
+          note: "Luogo di produzione cinematografica",
+          itemLink: "list-items.html"
+        },
+        {
+          id: "ITEM-05",
+          nome: "BUR Rizzoli",
+          citta: "Milano, Italia",
+          coords: [45.4642, 9.1900],
+          opera: "Decamerone, trad./riscrittura di Aldo Busi (1991)",
+          note: "Luogo di edizione (opera a stampa)",
+          itemLink: "list-items.html"
+        },
+        {
+          id: "ITEM-06",
+          nome: "National Gallery",
+          citta: "Londra, Regno Unito",
+          coords: [51.5086, -0.1283],
+          opera: "Storie di Griselda, Maestro di Griselda (1494 ca.)",
+          itemLink: "list-items.html"
+        },
+        {
+          id: "ITEM-07",
+          nome: "Museo Poldi Pezzoli",
+          citta: "Milano, Italia",
+          coords: [45.4719, 9.1943],
+          opera: "Cimone e Efigenia, Willem van Mieris (1698)",
+          itemLink: "list-items.html"
+        },
+        {
+          id: "ITEM-08",
+          nome: "Laing Art Gallery",
+          citta: "Newcastle upon Tyne, Regno Unito",
+          coords: [54.9738, -1.6131],
+          opera: "Isabella and the Pot of Basil, William Holman Hunt (1867-1868)",
+          itemLink: "list-items.html"
+        },
+        {
+          id: "ITEM-09",
+          nome: "Pinacoteca Nazionale di Siena",
+          citta: "Siena, Italia",
+          coords: [43.3172, 11.3308],
+          opera: "Ghismunda, Bernardino Mei (1650 ca.)",
+          itemLink: "list-items.html"
+        },
+        {
+          id: "ITEM-10",
+          nome: "Certaldo",
+          citta: "Certaldo (FI), Italia",
+          coords: [43.5486, 11.0433],
+          opera: "Federigo degli Alberighi, Mirko Basaldella (1967 ca.)",
+          note: "Città natale di Giovanni Boccaccio",
+          itemLink: "list-items.html"
+        },
+        {
+          id: "ITEM-11",
+          nome: "Editore Recitar Leggendo Audiolibri",
+          citta: "Perugia, Italia",
+          coords: [43.1122, 12.3888],
+          opera: "Decameron. Novelle scelte, audiolibro (Claudio Carini, voce narrante, 2008)",
+          note: "Luogo di edizione (opera sonora, non un esemplare unico conservato)",
+          itemLink: "list-items.html"
+        },
+        {
+          id: "ITEM-12",
+          nome: "Bibliothèque nationale de France",
+          citta: "Parigi, Francia",
+          coords: [48.8676, 2.3389],
+          opera: "Federigo degli Alberighi invita a pranzo monna Giovanna, miniatura di Ludovico Ceffini (1427 ca.)",
+          note: "Ms. Italien 63, f. 188v — Département des Manuscrits",
+          itemLink: "list-items.html"
+        }
+      ];
+
+      opere.forEach(function (item) {
+        var popup =
+          '<div style="text-align: center; font-family: sans-serif;">' +
+            '<h3 style="margin: 0 0 5px 0; font-size: 15px;">' + item.nome + ' (' + item.citta + ')</h3>' +
+            '<p style="margin: 0 0 6px 0; font-size: 13px;"><em>' + item.opera + '</em></p>' +
+            (item.note ? '<p style="margin:0 0 8px 0; font-size: 11px; color:#666;">' + item.note + '</p>' : '') +
+            '<a href="' + item.itemLink + '" style="color: #800020; font-weight: bold; text-decoration: none;">Vai alla scheda &rarr;</a>' +
+          '</div>';
+        L.marker(item.coords).addTo(map).bindPopup(popup);
+      });
+    });
+  </script>
+</body>
+</html>
