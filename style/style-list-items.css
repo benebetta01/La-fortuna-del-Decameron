@@ -1,0 +1,420 @@
+/* FONTS */
+/* normal */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+/* background */
+/* Forzi il colore di sfondo e il testo bianco per i link con classe .btn */
+a.btn.bg-pink {
+  background-color: #bf8c6f !important;
+  color: #ffffff !important;
+}
+
+a.btn.bg-blue {
+  background-color: #4e6c7e !important;
+  color: #ffffff !important;
+}
+
+a.btn.bg-black {
+  background-color: #555555 !important;
+  color: #ffffff !important;
+}
+
+/* Rimuove lo sfondo grigio di default se presente */
+a.btn {
+  text-decoration: none;
+  display: block;
+}
+
+/* LAYOUT */
+/* navigation bar */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav .active,
+.topnav .dropdown .dropbtn.active {
+  color: #000;
+  background-color: #ddd;
+}
+
+/* one column */
+.page-list-items .column {
+  float: left;
+  padding: 5%;
+  width: 100%;
+}
+
+/* two columns */
+/* left column */
+.page-list-items .leftcolumn {
+  float: left;
+  padding: 15px;
+  width: 20%;
+}
+
+/* Bordo per i pulsanti nella colonna di sinistra */
+.page-list-items .leftcolumn .btn {
+  border: 1px solid #ccc; /* Definisce lo spessore, lo stile e il colore del bordo */
+  border-radius: 4px;     /* Opzionale: arrotonda leggermente gli angoli */
+}
+
+/* right column */
+.page-list-items .rightcolumn {
+  float: left;
+  padding: 15px;
+  width: 80%;
+}
+
+/* equal columns */
+.page-list-items .equalcolumn {
+  float: left;
+  padding: 15px;
+  width: 50%;
+}
+
+/* search bar */
+.tab form.example {
+  display: flex;         /* Affianca input e button in orizzontale */
+  margin: 0 0 0 auto;    /* Spinge l'intero form a destra nella tab */
+  width: 250px;
+  min-width: 200px;
+}
+
+form.example {
+  margin: auto;
+  max-width: 300px;
+}
+
+form.example input[type="text"] {
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid grey;
+  flex: 1; /* L'input occupa tutto lo spazio rimanente */
+  width: auto;
+  float: left;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: none;
+  width: 20%;
+  padding: 10px;
+  color: white;
+  font-size: 13px;
+  border: 1px solid grey;
+  border-left: none; /* Unisce visivamente il pulsante all'input */
+  cursor: pointer;
+}
+
+/* tabs */
+
+.tab button.active {
+  background-color: #ccc;
+  color: black; /* Rende il testo nero */
+}
+
+.tabcontent {
+  display: block;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/*PER BARRA SEARCH accanto ai filtri*/
+/* Trasforma la barra tab in un contenitore Flex */
+.tab {
+  display: flex;
+  justify-content: space-between; /* Spinge la ricerca a destra */
+  align-items: center;            /* Centra verticalmente */
+  flex-wrap: wrap;                 /* Previene sovrapposizioni su schermi piccoli */
+  padding: 10px;
+  overflow: visible !important; /* Permette alla tendina di sporgere ed essere visibile */
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  position: relative; /* Garantisce il corretto livello di sovrapposizione */
+  z-index: 100;
+}
+
+/* Permette al contenitore dei pulsanti di occupare solo lo spazio necessario */
+/* 1. Mantiene i pulsanti vicini tra loro senza forzarne l'allargamento */
+#myBtnContainer {
+  display: flex;
+  flex-wrap: wrap;        /* Permette ai pulsanti di andare a capo se lo schermo è piccolo */
+  gap: 5px;               /* Controlla ed elimina lo spazio vuoto tra i pulsanti */
+  align-items: center;
+}
+
+/* 2. Rimuove la larghezza fissa del dropdown e adatta il contenitore al testo */
+#myBtnContainer .dropdown {
+  position: relative;        /* Mantiene l'ancoraggio per la tendina (Modifica Attuale) */
+  display: inline-block;
+  float: none;
+  overflow: visible !important; /* Permette alla tendina di uscire dal box */
+}
+
+/* 3. Mantiene la dimensione naturale del testo con un padding ridotto */
+#myBtnContainer .dropdown .dropbtn {
+  float: none;
+  cursor: pointer;
+  width: auto;            /* La larghezza si adatta alla lunghezza della scritta */
+  padding: 10px 12px;     /* Spazio interno ridotto per avvicinare le scritte */
+  white-space: nowrap;    /* Impedisce al testo di andare a capo dentro il pulsante */
+}
+
+/* 2. Gestione del menu a tendina verso il basso (Modifica Attuale) */
+#myBtnContainer .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;                 /* Posiziona la tendina SOTTO il pulsante */
+  left: 0;                   /* Allinea al bordo sinistro del pulsante */
+  min-width: 160px;
+  width: max-content;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 9999;              /* Resta sopra le card sottostanti */
+  background-color: #f9f9f9;
+}
+
+#myBtnContainer .dropdown:hover .dropdown-content {
+  display: block !important;
+}
+
+/* Stile dei singoli link all'interno della tendina */
+#myBtnContainer .dropdown-content a {
+  color: #333;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+#myBtnContainer .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Azzera i margini e fissa una larghezza per la search bar */
+.tab form.example {
+  margin: 0 0 0 auto; /* Il margin-left auto spinge il form tutto a destra */
+  width: 250px;
+  min-width: 200px;
+}
+
+/* Mantiene il pulsante di ricerca sempre blu */
+form.example button.bg-blue {
+  background-color: #4e6c7e;
+  color: white;
+}
+
+/* Effetto al passaggio del mouse per feedback visivo */
+form.example button.bg-blue:hover {
+  background-color: #30434f;
+}
+
+/* pagination */
+.pagination {
+  font-size: 13px;
+  margin: 20px 0;
+  text-align: center;
+  width: 100%;       /* Assicura che il blocco occupi tutto lo spazio orizzontale */
+  clear: both;       /* Rompe eventuali float precedenti per posizionarsi perfettamente al centro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*FILTER*/
+.filterDiv {
+  float: left;
+  width: 50%;         /* Forzi la card a occupare metà schermo (2 colonne) */
+  display: none;       /* Di base nasconde le card non filtrate */
+}
+
+/* Classe usata da JavaScript per mostrare solo gli elementi filtrati */
+.show {
+  display: block;      /* Fa comparire il filterDiv quando selezionato */
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;    /* Mantiene pulito il flusso per i float */
+}
+
+/* Azzeriamo il padding extra di equalcolumn dato che la larghezza la gestisce filterDiv */
+.filterDiv .equalcolumn {
+  width: 100%;
+  padding: 10px;
+}
+
+/* Stile uniforme per le immagini all'interno delle card */
+.card [class^="img-"] {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Risolve i problemi di disallineamento se una card ha più testo dell'altra */
+.card {
+  min-height: 480px; 
+}
+
+/* Responsive: su schermi da smartphone torna a colonna singola */
+@media screen and (max-width: 600px) {
+  .filterDiv {
+    width: 100%;
+  }
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+/* list items */
+/* + Posiziona l'immagine in alto al centro per inquadrare il volto */
+.card .img-Botticelli {
+  background-image: url("../img/opere/Botticelli - Nastagio degli Onesti pt.1.jpg");
+}
+
+.card .img-Kent {
+  background-image: url("../img/opere/Rockwell Kent - The Decameron illustrated edition.jpg");
+  background-position: center top; /* oppure: center 20% per una regolazione più fine */
+}
+
+.card .img-Kent-2 {
+  background-image: url("../img/opere/La caccia infernale Rockwell Kent.jpg");
+  background-position: center 20%; /* oppure: center 20% per una regolazione più fine */
+}
+
+.card .img-Pasolini {
+  background-image: url("../img/opere/Copertina Film Pasolini.png");
+}
+
+/* img periodo blu */
+.card .img-Busi {
+  background-image: url("../img/opere/Decameron Aldo Busi.jpg");
+  background-position: center top; /* oppure: center 20% per una regolazione più fine */
+}
+
+.card .img-Anonimo {
+  background-image: url("../img/opere/The Story of Griselda pt.1.jpg");
+}
+
+.card .img-Mieris {
+  background-image: url("../img/opere/Willem Van Mieris - Cimone e Efigenia.jpg");
+}
+
+.card .img-Hunt {
+  background-image: url("../img/opere/W.H.Hunt - Isabella and the Pot of Basil.jpg");
+  background-position: center 20%; /* center top oppure: center 20% per una regolazione più fine */
+}
+
+/* img periodo rosa */
+.card .img-Mei {
+  background-image: url("../img/opere/Bernardino Mei - Ghismunda.jpg");
+  background-position: center 30%; /* oppure: center 20% per una regolazione più fine */
+}
+
+.card .img-Basaldella {
+  background-image: url("../img/opere/Federigo degli Alberighi.jpg");
+}
+
+.card .img-Audiolibro {
+  background-image: url("../img/opere/audiolibro.jpg");
+  background-position: center 20%;
+  background-color: #4e6c7e; /* colore di fallback se l'immagine manca, coerente col resto del sito */
+}
+
+.card .img-Miniatura {
+  background-image: url("../img/opere/miniatura.jpg");
+  background-color: #bf8c6f; /* fallback se l'immagine manca */
+}
+
+/* accordion */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  font-size: 17px;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* ===================================================== */
+/* EVIDENZIAZIONE FILTRI SELEZIONATI - leftcolumn         */
+/* (riordina la lista / filtra le opere)                  */
+/* ===================================================== */
+
+/* i pulsanti si spostano leggermente "in avanti" (a destra)
+   quando vengono selezionati, con una barra colorata a sinistra
+   che li fa sembrare "in rilievo" rispetto agli altri */
+.leftcolumn .btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.leftcolumn .btn.active {
+  transform: translateX(12px);
+  box-shadow: -4px 0 0 0 #4e6c7e;
+}
+
+.leftcolumn .btn.default.active { /*in questo modo lascio bianco il button filtro evdenziato*/
+  background-color: #e7e7e7;
+  color: #000;
+}
+
+/* ===================================================== */
+/* EVIDENZIAZIONE FILTRI SELEZIONATI - rightcolumn        */
+/* (filtri per novella / giornata)                        */
+/* ===================================================== */
+
+/* Le "Giornate" hanno sempre uno sfondo grigio chiaro:
+   le distingue visivamente dal pulsante "Show all" */
+#myBtnContainer .dropbtn.giorno-btn {
+  background-color: #e2e2e2;
+  color: #333;
+}
+
+#myBtnContainer .dropbtn.giorno-btn:hover {
+  background-color: #cfcfcf;
+  color: #333;
+}
+
+/* Indica qual è il filtro attualmente attivo: o "Show all",
+   oppure la Giornata a cui appartiene la novella selezionata.
+   Una barra colorata sotto al pulsante, ben visibile sia sul
+   pulsante scuro di "Show all" sia su quello grigio chiaro
+   delle Giornate */
+#myBtnContainer .dropbtn.active {
+  box-shadow: inset 0 -4px 0 0 #4e6c7e;
+}
+
+/* La novella selezionata resta evidenziata anche dopo
+   la chiusura del menu a tendina (la si rivede alla
+   riapertura della tendina) */
+#myBtnContainer .dropdown-content a.active {
+  background-color: #4e6c7e;
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+/*per far sì che il menù a tendina della navbar non venga coperto dalla tab dei filtri*/
+.topnav .dropdown-content {
+  z-index: 1000;
+}
